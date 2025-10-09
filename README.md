@@ -64,7 +64,7 @@ Note: Github has issues displaying the python notebook downloaded from colab(202
    </tr>
    <tr>
       <td>44</td>
-      <td> <a href='https://web.stanford.edu/~jurafsky/slp3/9.pdf'>Chapter 9 up to 9.3</a><br> <a href='https://arxiv.org/abs/2508.16982'> Chalkidis, 2025</td>
+      <td> <a href='https://web.stanford.edu/~jurafsky/slp3/9.pdf'>Chapter 9 up to 9.3</a><br> <a href='https://arxiv.org/abs/2508.16982'> Chalkidis, 2025</a></td>
       <td>28. Oct. 2025:<br> Post-training: Instruction Tuning & Alignment (TBA)<br> Societechnical Challenges of Alignment (TBA) </td>
       <td>31. Oct. 2025: Project help.</td>
       <td></td>
