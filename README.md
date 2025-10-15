@@ -36,7 +36,7 @@ Note: Github has issues displaying the python notebook downloaded from colab(202
    </tr>
    <tr>
       <td>39</td>
-      <td> <a href='https://web.stanford.edu/~jurafsky/slp3/8.pdf'>Chapter 8 up to end of 8.8</a><br> <a href='https://web.stanford.edu/~jurafsky/slp3/9.pdf'>Chapter 9 up to end of 9.2</a><br> <a href='https://web.stanford.edu/~jurafsky/slp3/10.pdf'>Chapter 10 up to end of 10.2</a><br> <a href='https://web.stanford.edu/~jurafsky/slp3/11.pdf'>Chapter 11</a> </td>
+      <td> <a href='https://web.stanford.edu/~jurafsky/slp3/8.pdf'>Chapter 8 up to end of 8.8</a><br> <a href='https://web.stanford.edu/~jurafsky/slp3/10.pdf'>Chapter 10 up to end of 10.2</a><br> <a href='https://web.stanford.edu/~jurafsky/slp3/11.pdf'>Chapter 11</a> </td>
       <td>23. Sep. 2025:<br> Attention (<a href='chapters/attention_slides2.ipynb'>slides</a>)<br> Transformers (<a href='chapters/dl-representations_contextual_transformers.ipynb'>slides</a>)<br> </td>
       <td>26. &amp; 29. Sep. 2025:<br> Language Models with <a href='https://huggingface.co/course/chapter1'>Transformers</a> and RNNs<br> Project help<br> </td>
       <td><a href='labs/notebooks_2025/lab_4.ipynb'>lab 4</a></td>
