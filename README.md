@@ -58,7 +58,7 @@ Note: Github has issues displaying the python notebook downloaded from colab(202
    <tr>
       <td>43</td>
       <td> <a href='https://web.stanford.edu/~jurafsky/slp3/12.pdf'>Chapter 12</a><br><a href="https://aclanthology.org/2022.acl-long.482.pdf">Hershcovich et al., 2022</a> </td>
-      <td>21. Oct. 2025:<br> Machine Translation (<a href='chapters/nmt_slides_active.ipynb'>slides</a>)<br> Transfer Learning (<a href='chapters/xling_transfer_learning_slides.ipynb'>slides</a>)<br> </td>
+      <td>21. Oct. 2025:<br> Machine Translation (<a href='chapters/nmt_slides_active.ipynb'>slides</a>)<br> Multilingual and Multicultural NLP (<a href='chapters/xling_transfer_learning_slides.ipynb'>slides</a>)<br> </td>
       <td>24. &amp; 27. Oct. 2025: Project help.</td>
       <td></td>
    </tr>
