@@ -1,147 +1,27 @@
-# Installation Instructions
+# Using the Course Notebooks
 
-There are several ways to set-up and run the project:
-1. [ Render Book Statically ](#render-book-statically)
-2. [ Google Colab ](#google-colab)
-3. [ Docker installation ](#install-docker)
-4. [ Set-up a Local Virtual Environment ](#set-up-a-local-virtual-environment)
+The course uses Google Colab. You do not need Docker or a local Python installation for the labs.
 
-Important notes:
-1. [ Access Content ](#access-content)
-2. [ Pull new content regularly ](#pull-new-content-regularly)
+## View the material
 
-## Render Book Statically
-The easiest way to view the course content is via the static [nbviewer](https://nbviewer.jupyter.org/github/coastalcph/nlp-course/blob/master/overview.ipynb). 
-While this does not allow you to change and execute code, it also doesn't require you to install software locally and only needs a browser.
+The easiest way to browse the lecture notebooks is through the static [course overview on nbviewer](https://nbviewer.org/github/coastalcph/nlp-course/blob/master/overview.ipynb).
 
-## Google Colab
+## Work on a lab in Google Colab
 
-When working on the labs we recommend you copy the notebooks to a folder on your Google Drive and open them as a Colab notebook. A thorough guide can be found [here](https://saturncloud.io/blog/how-to-run-a-downloaded-jupyter-notebook-on-google-colaboratory/). A Colab notebook will run on Google's servers and will allow you access to limited Google Cloud Compute GPUs for your model training and validation. Furthermore, the lab notebooks will be covered using Colab, so environments and tools will be similar.
+1. Open the lab notebook from the [course schedule](README.md).
+2. Select the **Open in Colab** link at the top of the notebook.
+3. In Colab, select **File → Save a copy in Drive** before editing.
+4. If the lab trains a neural model, select **Runtime → Change runtime type → GPU**.
+5. Run the notebook from the beginning with **Runtime → Run all**.
 
-## Docker installation
+Package-installation cells are included in each lab. Run them once at the beginning of a new Colab session. Colab sessions are temporary, so downloaded datasets and installed packages disappear when the runtime is reset.
 
-To be able to make changes to the book and render it dynamically, we recommend you use Docker.
-We assume you have a command line interface (CLI) in your OS 
-(bash, zsh, cygwin, git-bash, power-shell, etc.). We assume this CLI sets 
- the variable `$(pwd)` to the current directory. If it doesn't replace
- all mentions of `$(pwd)` with the current directory you are in. 
+## Save and submit your work
 
-### Install Docker
+Your editable copy is stored in Google Drive. Use **File → Download → Download .ipynb** when you need a local copy or must include a notebook with a submission.
 
-For Mac and Windows, go to the [docker webpage](https://www.docker.com/get-started) and follow the instruction for your platform. Instructions for Ubuntu can be found [here](https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-ce-1). 
+Do not edit the repository copy directly: course updates may replace it. Check the [course repository](https://github.com/coastalcph/nlp-course) and Absalon announcements for updates.
 
-### Download Image
+## Optional local use
 
-Next, you can download the `stat-nlp-book` docker image like so:
-
-    docker pull bjerva/stat-nlp-book:ndak18000u
-
-If you get a permission error here and at any later point, try prepending `sudo ` to the command:
-
-    sudo docker pull bjerva/stat-nlp-book:ndak18000u
-    
-This process may take a while, so use the time to start familiarising yourself with [the structure of the course](https://nbviewer.jupyter.org/github/coastalcph/nlp-course/blob/master/overview.ipynb).
-
-### Get Repository
-
-You can use the git installation in the docker container to get the repository:
-
-    docker run -v "$(pwd)":/home/jovyan/work bjerva/stat-nlp-book:ndak18000u git clone https://github.com/coastalcph/nlp-course 
-
-Note: this will create a new `nlp-course` directory in your current directory.
-
-### Change into directory
-
-We assume from here on that you are in the top level `nlp-course` directory:
-
-    cd nlp-course
-
-Note: you need to be in the `nlp-course` directory every time you want to run/update the book.
-
-### Run Notebook
-
-    docker run -it --rm -p 8888:8888 -v "$(pwd)":/home/jovyan/work bjerva/stat-nlp-book:ndak18000u
-
-You are now ready to visit the [overview page](http://localhost:8888/notebooks/overview.ipynb) *locally* through the installed book . 
-
-### Usage
-
-Once installed you can always run your notebook server by first changing
-into your local `nlp-course` directory, and then executing:
-
-    docker run -it --rm -p 8888:8888 -v "$(pwd)":/home/jovyan/work bjerva/stat-nlp-book:ndak18000u
-    
-This is **assuming that your docker daemon is running** and that you are
-**in the `nlp-course` directory**. How to run the docker daemon
-depends on your system.
-
-### Update the notebook
-
-We frequently make changes to the book. To get these changes you
-should first make sure to clean your *local changes* to avoid merge 
-conflicts. That is, you might have made changes (by changing the code
-or simply running it) to the files that we changed. In these cases `git`
- will complain when you do the update. To overcome this you can undo all
- your changes by executing:
- 
-    docker run -v "$(pwd)":/home/jovyan/work bjerva/stat-nlp-book:ndak18000u git checkout -- .
-    
-If you want to keep your changes **create copies of the changed files**.
-Jupyter has a "Make a copy" option in the "File" menu for this. You can also create a clone of this repository
-to keep your own changes and merge our changes in a more controlled manner. 
-
-To get the actual updates then run
-
-    docker run -v "$(pwd)":/home/jovyan/work bjerva/stat-nlp-book:ndak18000u git pull
-
-## Set-up a Local Virtual Environment
-
-If you cannot use Docker, you can alternatively set up the book directly.
-
-### git clone the repository
-
-    git clone https://github.com/coastalcph/nlp-course
-
-### Create virtual environment
-Enter the cloned directory:
-
-    cd nlp-course
-
-and create the virtual environment:
-
-    python -m venv nlp_venv
-
-### Enter the virtual environment
-
-    source nlp_venv/bin/activate
-
-### Install dependencies
-
-    pip install --upgrade pip
-    
-**MacOS**: Install rust
-
-    curl https://sh.rustup.rs -sSf | sh
-    
-**MacOS**: Install xcode
-
-    xcode-select --install
-    
-    pip install -r requirements.txt
-    jupyter-nbextension install rise --py --sys-prefix
-    jupyter-nbextension enable rise --py --sys-prefix    
-
-### Run the notebook server 
-(the UI of the server will be opened automatically)
-
-    jupyter notebook
-   
-
-## Access Content
-
-The repository contains a lot of material, some of which may not be ready
-for consumption yet. This is why you should always access content through
-the top-level [overview page (local-link)](http://localhost:8888/notebooks/overview.ipynb).
-
-## Pull new content regularly
-Receive notifications for new updates by "Watch" -ing the repo.
+Local execution is unsupported for the labs. If you nevertheless choose to work locally, create an isolated environment and install the packages used by the particular notebook. The teaching team may not be able to diagnose differences from the tested Colab environment.

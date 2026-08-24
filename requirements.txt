@@ -20,5 +20,4 @@ torch
 torchvision
 transformers
 sacrebleu
-jupyter
 rise
