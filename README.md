@@ -6,6 +6,7 @@ Materials from this interactive book are used throughout the Natural Language Pr
 <table>
    <tr>
       <th>Week</th>
+      <th>Intended learning outcomes</th>
       <th>Reading (before lecture)</th>
       <th>Lecture (Tuesday)</th>
       <th>Lab (Friday &amp; Monday)</th>
@@ -13,6 +14,7 @@ Materials from this interactive book are used throughout the Natural Language Pr
    </tr>
    <tr>
       <td>36</td>
+      <td>By the end of the week, students should be able to:<ul><li>tokenise and inspect multilingual text using rule-based and subword methods;</li><li>formulate text classification as a supervised NLP task; and</li><li>implement and evaluate a simple classification baseline.</li></ul></td>
       <td> <a href='https://web.stanford.edu/~jurafsky/slp3/2.pdf'>Chapter 2</a><br> <a href='https://web.stanford.edu/~jurafsky/slp3/4.pdf'>Chapter 4</a></td>
       <td>1. Sep. 2026:<br> Course Logistics (<a href='chapters/course_logistics.ipynb'>slides</a>)<br> Introduction to NLP (<a href='chapters/intro_short.ipynb'>slides</a>)<br> Tokenisation &amp; Sentence Splitting (<a href='chapters/tokenization.ipynb'>notes</a>, <a href='chapters/tokenization_slides.ipynb'>slides</a>, <a href='exercises/tokenization.ipynb'>exercises</a>)<br> Text Classification (<a href='chapters/doc_classify_slides_short.ipynb'>slides</a>)<br> </td>
       <td>4. &amp; 7. Sep. 2026:<br> Jupyter notebook setup, introduction to <a href='https://colab.research.google.com/'>Colab</a><br> Introduction to <a href='https://pytorch.org/tutorials/'>PyTorch</a><br> Project group arrangements<br> Questions about the course project<br> </td>
@@ -20,6 +22,7 @@ Materials from this interactive book are used throughout the Natural Language Pr
    </tr>
    <tr>
       <td>37</td>
+      <td>By the end of the week, students should be able to:<ul><li>define and evaluate n-gram language models using perplexity;</li><li>construct and use static and subword representations; and</li><li>compare simple baselines with learned representations.</li></ul></td>
       <td> <a href='https://web.stanford.edu/~jurafsky/slp3/3.pdf'>Chapter 3</a><br> <a href='https://web.stanford.edu/~jurafsky/slp3/5.pdf'>Chapter 5</a><br> <a href='https://web.stanford.edu/~jurafsky/slp3/6.pdf'>Chapter 6</a></td>
       <td>8. Sep. 2026:<br> Language Modelling (<a href='chapters/language_models_slides.ipynb'>slides</a>)<br> Word Embeddings (<a href='chapters/dl-representations_simple.ipynb'>slides</a>)<br> </td>
       <td>11. &amp; 14. Sep. 2026:<br> Word representations and sentiment classification<br> Project help<br> </td>
@@ -27,6 +30,7 @@ Materials from this interactive book are used throughout the Natural Language Pr
    </tr>
    <tr>
       <td>38</td>
+      <td>By the end of the week, students should be able to:<ul><li>formulate span prediction as sequence labelling;</li><li>train and evaluate a sequence labeller; and</li><li>explain how structured prediction and decoding constrain possible outputs.</li></ul></td>
       <td> <a href='https://web.stanford.edu/~jurafsky/slp3/18.pdf'>Chapter 18</a><br> <a href='https://web.stanford.edu/~jurafsky/slp3/20.pdf'>Chapter 20</a> </td>
       <td>15. Sep. 2026:<br> Sequence Labelling (<a href='chapters/sequence_labeling_slides.ipynb'>slides</a>)<br> Parsing (<a href='chapters/dependency_parsing_slides_active.ipynb'>slides</a>)<br> </td>
       <td>18. &amp; 21. Sep. 2026:<br> Sequence labelling and beam search<br> Project help<br> </td>
@@ -34,6 +38,7 @@ Materials from this interactive book are used throughout the Natural Language Pr
    </tr>
    <tr>
       <td>39</td>
+      <td>By the end of the week, students should be able to:<ul><li>explain and train recurrent neural models;</li><li>analyse model errors quantitatively and qualitatively; and</li><li>compare learned classifiers with baselines across languages.</li></ul></td>
       <td><a href='https://web.stanford.edu/~jurafsky/slp3/14.pdf'>Chapter 14</a><br> <a href='https://web.stanford.edu/~jurafsky/slp3/7.pdf'>Chapter 7</a> </td>
       <td>22. Sep. 2026:<br> Recurrent Neural Networks (<a href='chapters/rnn_slides_ucph.ipynb'>slides</a>)<br> Neural Language Models (<a href='chapters/dl-representations_contextual.ipynb'>slides</a>)<br> </td>
       <td>25. &amp; 28. Sep. 2026:<br> Error analysis and explainability<br> Project help<br> </td>
@@ -41,6 +46,7 @@ Materials from this interactive book are used throughout the Natural Language Pr
    </tr>
    <tr>
       <td>40</td>
+      <td>By the end of the week, students should be able to:<ul><li>explain the main components of attention and Transformer models;</li><li>fine-tune a pretrained model for an NLP task; and</li><li>evaluate generated text without adapting models to held-out test examples.</li></ul></td>
       <td><a href='https://web.stanford.edu/~jurafsky/slp3/7.pdf'>Chapter 7</a><br> <a href='https://web.stanford.edu/~jurafsky/slp3/9.pdf'>Chapter 9</a></td>
       <td>29. Sep. 2026:<br> Attention (<a href='chapters/attention_slides2.ipynb'>slides</a>)<br> Transformers (<a href='chapters/dl-representations_contextual_transformers.ipynb'>slides</a>)<br> </td>
       <td>2. &amp; 5. Oct. 2026:<br> Language Models with <a href='https://huggingface.co/learn/llm-course/chapter1/1'>Transformers</a> and RNNs<br> Project help<br> </td>
@@ -48,6 +54,7 @@ Materials from this interactive book are used throughout the Natural Language Pr
    </tr>
    <tr>
       <td>41</td>
+      <td>By the end of the week, students should be able to:<ul><li>distinguish information extraction from extractive question answering;</li><li>prepare and evaluate multilingual QA data, including unanswerable questions; and</li><li>interpret cross-lingual differences in system performance.</li></ul></td>
       <td> <a href='https://web.stanford.edu/~jurafsky/slp3/21.pdf'>Chapter 21</a><br> <a href='https://web.stanford.edu/~jurafsky/slp3/11.pdf'>Chapter 11, Section 11.6</a><br><a href="https://aclanthology.org/2020.tacl-1.30.pdf">Clark et al., 2020</a> </td>
       <td>6. Oct. 2026:<br> Information Extraction (<a href='chapters/information_extraction_slides.ipynb'>slides</a>)<br> Question Answering (<a href='chapters/question_answering_slides.ipynb'>slides</a>)<br> </td>
       <td>9. &amp; 19. Oct. 2026:<br> In-depth look at Transformers and Multilingual QA<br> Project help<br> </td>
@@ -55,6 +62,7 @@ Materials from this interactive book are used throughout the Natural Language Pr
    </tr>
    <tr>
       <td>43</td>
+      <td>By the end of the week, students should be able to:<ul><li>explain core machine-translation and cross-lingual transfer approaches;</li><li>compare NLP methods across languages and cultural contexts; and</li><li>identify limitations of multilingual evaluation.</li></ul></td>
       <td> <a href='https://web.stanford.edu/~jurafsky/slp3/13.pdf'>Chapter 13</a><br><a href="https://aclanthology.org/2022.acl-long.482.pdf">Hershcovich et al., 2022</a> </td>
       <td>20. Oct. 2026:<br> Machine Translation (<a href='chapters/nmt_slides_active.ipynb'>slides</a>)<br> Multilingual and Multicultural NLP (<a href='chapters/xling_transfer_learning_slides.ipynb'>slides</a>)<br> </td>
       <td>23. &amp; 26. Oct. 2026: Project help.</td>
@@ -62,6 +70,7 @@ Materials from this interactive book are used throughout the Natural Language Pr
    </tr>
    <tr>
       <td>44</td>
+      <td>By the end of the week, students should be able to:<ul><li>explain instruction tuning and post-training methods;</li><li>critically assess language-model alignment, limitations and use cases; and</li><li>synthesise reproducible quantitative and qualitative project findings.</li></ul></td>
       <td> <a href='https://web.stanford.edu/~jurafsky/slp3/8.pdf'>Chapter 8 up to end of 8.3</a><br> <a href='https://arxiv.org/abs/2508.16982'> Chalkidis, 2026</a></td>
       <td>27. Oct. 2026:<br> Post-training: Instruction Tuning & Alignment (<a href='chapters/post_training_llms_slides.pdf'>slides</a>)<br> Sociotechnical Challenges of LLM Alignment (<a href='chapters/sociotechnical_challenges_llms_slides.pdf'>slides</a>) </td>
       <td>30. Oct. 2026: Project help.</td>
