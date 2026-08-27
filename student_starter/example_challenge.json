@@ -1,0 +1,26 @@
+[
+  {
+    "id": "example-bridge-answerable",
+    "pair_id": "example-bridge",
+    "created_by": "example-author",
+    "question": "Hvornår åbnede Øresundsbroen?",
+    "context": "The Øresund Bridge opened on 1 July 2000 and connects Copenhagen with Malmö.",
+    "lang": "da",
+    "answerable": true,
+    "answer_start": 29,
+    "answer": "1 July 2000",
+    "source_url": "https://en.wikipedia.org/wiki/%C3%98resund_Bridge"
+  },
+  {
+    "id": "example-bridge-unanswerable",
+    "pair_id": "example-bridge",
+    "created_by": "example-author",
+    "question": "Hvornår lukkede Øresundsbroen?",
+    "context": "The Øresund Bridge opened on 1 July 2000 and connects Copenhagen with Malmö.",
+    "lang": "da",
+    "answerable": false,
+    "answer_start": -1,
+    "answer": "",
+    "source_url": "https://en.wikipedia.org/wiki/%C3%98resund_Bridge"
+  }
+]

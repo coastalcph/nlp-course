@@ -3,6 +3,10 @@
 
 Materials from this interactive book are used throughout the Natural Language Processing course at the Department of Computer Science, University of Copenhagen. The official course description can be found [here](https://kurser.ku.dk/course/ndak18000u). Materials covered each week are listed below. The course schedule and materials are tentative and subject to minor changes. Most reading material is from [Speech and Language Processing by Jurafsky & Martin](https://web.stanford.edu/~jurafsky/slp3).
 
+## Course project
+
+The student-facing [project starter](student_starter/) contains the challenge-set validator, a valid format example and usage instructions.
+
 <table>
    <tr>
       <th>Week</th>
