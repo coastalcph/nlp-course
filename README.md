@@ -27,8 +27,8 @@ Materials from this interactive book are used throughout the Natural Language Pr
    </tr>
    <tr>
       <td>38</td>
-      <td> <a href='https://web.stanford.edu/~jurafsky/slp3/18.pdf'>Chapter 18</a><br> <a href='https://web.stanford.edu/~jurafsky/slp3/20.pdf'>Chapter 20</a> </td>
-      <td>15. Sep. 2026:<br> Sequence Labelling (<a href='chapters/sequence_labeling_slides.ipynb'>slides</a>)<br> Parsing (<a href='chapters/dependency_parsing_slides_active.ipynb'>slides</a>)<br> </td>
+      <td> <a href='https://web.stanford.edu/~jurafsky/slp3/18.pdf'>Chapter 18</a></td>
+      <td>15. Sep. 2026:<br> Sequence Labelling (<a href='chapters/sequence_labeling_slides.ipynb'>slides</a>)<br> </td>
       <td>18. &amp; 21. Sep. 2026:<br> Sequence labelling and beam search<br> Project help<br> </td>
       <td><a href='labs/notebooks_2026/lab_3.ipynb'>lab 3</a></td>
    </tr>
@@ -55,15 +55,15 @@ Materials from this interactive book are used throughout the Natural Language Pr
    </tr>
    <tr>
       <td>43</td>
-      <td> <a href='https://web.stanford.edu/~jurafsky/slp3/13.pdf'>Chapter 13</a><br><a href="https://aclanthology.org/2022.acl-long.482.pdf">Hershcovich et al., 2022</a> </td>
-      <td>20. Oct. 2026:<br> Machine Translation (<a href='chapters/nmt_slides_active.ipynb'>slides</a>)<br> Multilingual and Multicultural NLP (<a href='chapters/xling_transfer_learning_slides.ipynb'>slides</a>)<br> </td>
+      <td> <a href="https://aclanthology.org/2022.acl-long.482.pdf">Hershcovich et al., 2022</a><br> <a href='https://arxiv.org/abs/2508.16982'>Chalkidis, 2026</a></td>
+      <td>20. Oct. 2026:<br> Multilingual and Multicultural NLP (<a href='chapters/xling_transfer_learning_slides.ipynb'>slides</a>)<br> Sociotechnical Challenges of LLM Alignment (<a href='chapters/sociotechnical_challenges_llms_slides.pdf'>slides</a>)<br> </td>
       <td>23. &amp; 26. Oct. 2026: Project help.</td>
       <td></td>
    </tr>
    <tr>
       <td>44</td>
-      <td> <a href='https://web.stanford.edu/~jurafsky/slp3/8.pdf'>Chapter 8 up to end of 8.3</a><br> <a href='https://arxiv.org/abs/2508.16982'> Chalkidis, 2026</a></td>
-      <td>27. Oct. 2026:<br> Post-training: Instruction Tuning & Alignment (<a href='chapters/post_training_llms_slides.pdf'>slides</a>)<br> Sociotechnical Challenges of LLM Alignment (<a href='chapters/sociotechnical_challenges_llms_slides.pdf'>slides</a>) </td>
+      <td> <a href='https://web.stanford.edu/~jurafsky/slp3/20.pdf'>Chapter 20</a><br> <a href='https://web.stanford.edu/~jurafsky/slp3/13.pdf'>Chapter 13</a></td>
+      <td>27. Oct. 2026:<br> Parsing (<a href='chapters/dependency_parsing_slides_active.ipynb'>slides</a>)<br> Machine Translation (<a href='chapters/nmt_slides_active.ipynb'>slides</a>)<br> </td>
       <td>30. Oct. 2026: Project help.</td>
       <td></td>
    </tr>
