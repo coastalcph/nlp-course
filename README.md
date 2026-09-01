@@ -15,7 +15,7 @@ Materials from this interactive book are used throughout the Natural Language Pr
       <td>36</td>
       <td> <a href='https://web.stanford.edu/~jurafsky/slp3/2.pdf'>Chapter 2</a><br> <a href='https://web.stanford.edu/~jurafsky/slp3/4.pdf'>Chapter 4</a></td>
       <td>1. Sep. 2026:<br> Course Logistics (<a href='chapters/course_logistics.ipynb'>slides</a>)<br> Introduction to NLP (<a href='chapters/intro_short.ipynb'>slides</a>)<br> Tokenisation &amp; Sentence Splitting (<a href='chapters/tokenization.ipynb'>notes</a>, <a href='chapters/tokenization_slides.ipynb'>slides</a>, <a href='exercises/tokenization.ipynb'>exercises</a>)<br> Text Classification (<a href='chapters/doc_classify_slides_short.ipynb'>slides</a>)<br> </td>
-      <td>4. &amp; 7. Sep. 2026:<br> Jupyter notebook setup, introduction to <a href='https://colab.research.google.com/'>Colab</a><br> Introduction to <a href='https://pytorch.org/tutorials/'>PyTorch</a><br> Project group arrangements<br> Questions about the course project<br> </td>
+      <td>4. &amp; 7. Sep. 2026:<br> Google <a href='https://colab.research.google.com/'>Colab</a> and notebook workflow<br> BPE algorithm and subword tokenisation<br> Introduction to <a href='https://pytorch.org/tutorials/'>PyTorch</a><br> Project group arrangements<br> Questions about the course project<br> </td>
       <td><a href='labs/notebooks_2026/lab_1.ipynb'>lab 1</a></td>
    </tr>
    <tr>
