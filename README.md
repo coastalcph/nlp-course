@@ -20,16 +20,16 @@ Materials from this interactive book are used throughout the Natural Language Pr
    </tr>
    <tr>
       <td>37</td>
-      <td> <a href='https://web.stanford.edu/~jurafsky/slp3/3.pdf'>Chapter 3</a><br> <a href='https://web.stanford.edu/~jurafsky/slp3/5.pdf'>Chapter 5</a><br> <a href='https://web.stanford.edu/~jurafsky/slp3/6.pdf'>Chapter 6</a></td>
-      <td>8. Sep. 2026:<br> Language Modelling (<a href='chapters/language_models_slides.ipynb'>slides</a>)<br> Word Embeddings (<a href='chapters/dl-representations_simple.ipynb'>slides</a>)<br> </td>
-      <td>11. &amp; 14. Sep. 2026:<br> Word representations and sentiment classification<br> Project help<br> </td>
+      <td> <a href='https://web.stanford.edu/~jurafsky/slp3/18.pdf'>Chapter 18</a></td>
+      <td>8. Sep. 2026:<br> Sequence Labelling (<a href='chapters/sequence_labeling_slides.ipynb'>slides</a>)<br> </td>
+      <td>11. &amp; 14. Sep. 2026:<br> Sequence labelling and beam search<br> Project help<br> </td>
       <td><a href='labs/notebooks_2026/lab_2.ipynb'>lab 2</a></td>
    </tr>
    <tr>
       <td>38</td>
-      <td> <a href='https://web.stanford.edu/~jurafsky/slp3/18.pdf'>Chapter 18</a></td>
-      <td>15. Sep. 2026:<br> Sequence Labelling (<a href='chapters/sequence_labeling_slides.ipynb'>slides</a>)<br> </td>
-      <td>18. &amp; 21. Sep. 2026:<br> Sequence labelling and beam search<br> Project help<br> </td>
+      <td> <a href='https://web.stanford.edu/~jurafsky/slp3/3.pdf'>Chapter 3</a><br> <a href='https://web.stanford.edu/~jurafsky/slp3/5.pdf'>Chapter 5</a><br> <a href='https://web.stanford.edu/~jurafsky/slp3/6.pdf'>Chapter 6</a></td>
+      <td>15. Sep. 2026:<br> Language Modelling (<a href='chapters/language_models_slides.ipynb'>slides</a>)<br> Word Embeddings (<a href='chapters/dl-representations_simple.ipynb'>slides</a>)<br> </td>
+      <td>18. &amp; 21. Sep. 2026:<br> Word representations and sentiment classification<br> Project help<br> </td>
       <td><a href='labs/notebooks_2026/lab_3.ipynb'>lab 3</a></td>
    </tr>
    <tr>
