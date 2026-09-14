@@ -34,7 +34,7 @@ Materials from this interactive book are used throughout the Natural Language Pr
    </tr>
    <tr>
       <td>39</td>
-      <td><a href='https://web.stanford.edu/~jurafsky/slp3/6.pdf'>Chapter 6</a><br> <a href='https://web.stanford.edu/~jurafsky/slp3/14.pdf'>Chapter 14</a><br> <a href='https://web.stanford.edu/~jurafsky/slp3/7.pdf'>Chapter 7</a> </td>
+      <td><a href='https://web.stanford.edu/~jurafsky/slp3/6.pdf'>Chapter 6</a><br> <a href='https://web.stanford.edu/~jurafsky/slp3/14.pdf'>Chapter 14</a> </td>
       <td>22. Sep. 2026:<br> Recurrent Neural Networks (<a href='chapters/rnn_slides_ucph.ipynb'>slides</a>)<br> Neural Language Models (<a href='chapters/dl-representations_contextual.ipynb'>slides</a>)<br> </td>
       <td>25. &amp; 28. Sep. 2026:<br> Error analysis and explainability<br> Project help<br> </td>
       <td><a href='labs/notebooks_2026/lab_4.ipynb'>lab 4</a></td>
