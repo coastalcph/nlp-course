@@ -1,0 +1,87 @@
+/* Loaded automatically by RISE for this notebook. */
+.rise-enabled .reveal .text_cell,
+.rise-enabled .reveal .text_cell_render {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(22px, 3.25vh, 30px);
+  line-height: 1.35;
+}
+.rise-enabled .reveal .rendered_html h1 {
+  font-size: clamp(42px, 7vh, 64px);
+  font-weight: 400;
+  line-height: 1.15;
+}
+.rise-enabled .reveal .rendered_html h2 {
+  font-size: clamp(32px, 5.1vh, 46px);
+  font-weight: 400;
+  line-height: 1.18;
+  margin: 0 0 .65em;
+}
+.rise-enabled .reveal .rendered_html p { margin: .6em 0; }
+.rise-enabled .reveal .rendered_html li { line-height: 1.35; margin: .45em 0; }
+.rise-enabled .reveal .lecture-figure {
+  display: block;
+  width: auto;
+  max-width: 98%;
+  object-fit: contain;
+  margin: .25em auto .5em;
+  border: 0;
+  box-shadow: none;
+}
+.rise-enabled .reveal .lecture-columns {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 2em;
+  align-items: center;
+}
+.rise-enabled .reveal .rendered_html table {
+  font-size: inherit;
+  margin: .4em 0;
+  border-collapse: collapse;
+}
+.rise-enabled .reveal .rendered_html th,
+.rise-enabled .reveal .rendered_html td {
+  padding: .3em .55em;
+  border: 0;
+  border-bottom: 1px solid #d5d9df;
+}
+.rise-enabled .reveal .sentence-pair {
+  display: flex;
+  gap: 2em;
+  justify-content: space-around;
+  font-size: 1.2em;
+  margin: 1em 0;
+}
+.rise-enabled .reveal .cell .prompt,
+.rise-enabled .reveal .anchor-link { display: none; }
+.rise-enabled .reveal .code_cell .input_area {
+  border: 0;
+  box-shadow: none;
+  background: #f5f6f8;
+}
+.rise-enabled .reveal .code_cell,
+.rise-enabled .reveal .rendered_html pre {
+  font-size: clamp(18px, 2.5vh, 23px);
+  line-height: 1.3;
+}
+.rise-enabled .reveal .reveal-notes,
+.rise-enabled .reveal .reveal-skip { display: none !important; }
+.rise-enabled .reveal .rendered_html h1,
+.rise-enabled .reveal .rendered_html h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: none;
+}
+/* Notebook's HTML sanitizer removes inline styles, so figure sizes live here. */
+.rise-enabled .reveal .lecture-figure { height: 42vh; }
+.rise-enabled .reveal .figure-36 { height: 36vh; }
+.rise-enabled .reveal .figure-40 { height: 40vh; }
+.rise-enabled .reveal .figure-43 { height: 43vh; }
+.rise-enabled .reveal .figure-44 { height: 44vh; }
+.rise-enabled .reveal .figure-45 { height: 45vh; }
+.rise-enabled .reveal .figure-48 { height: 48vh; }
+.rise-enabled .reveal .cosine-quiz {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 1.5em;
+  align-items: center;
+}
+.rise-enabled .reveal .cosine-quiz p { margin: .7em 0; }

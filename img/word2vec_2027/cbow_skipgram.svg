@@ -6,23 +6,23 @@
 <text x="825" y="40" font-family="DejaVu Sans,Arial,sans-serif" font-size="30" fill="#087c73" font-weight="700" text-anchor="middle">Skip-gram</text>
 <line x1="550" y1="55" x2="550" y2="340" stroke="#cbd5e1" stroke-width="2"/>
 <rect x="25" y="80" width="170" height="60" rx="10" fill="white" stroke="#245da8" stroke-width="2"/>
-<text x="110.0" y="118.16" font-family="DejaVu Sans,Arial,sans-serif" font-size="24" fill="#245da8" font-weight="400" text-anchor="middle">are</text>
+<text x="110.0" y="118.16" font-family="DejaVu Sans,Arial,sans-serif" font-size="24" fill="#245da8" font-weight="400" text-anchor="middle">peel</text>
 <rect x="300" y="80" width="170" height="60" rx="10" fill="white" stroke="#245da8" stroke-width="2"/>
-<text x="385.0" y="118.16" font-family="DejaVu Sans,Arial,sans-serif" font-size="24" fill="#245da8" font-weight="400" text-anchor="middle">tasty</text>
+<text x="385.0" y="118.16" font-family="DejaVu Sans,Arial,sans-serif" font-size="24" fill="#245da8" font-weight="400" text-anchor="middle">the</text>
 <line x1="110" y1="146" x2="197" y2="199" stroke="#245da8" stroke-width="2" marker-end="url(#arrow)"/>
 <line x1="385" y1="146" x2="292" y2="199" stroke="#245da8" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="133" y="205" width="240" height="60" rx="10" fill="white" stroke="#245da8" stroke-width="2"/>
-<text x="253.0" y="242.82" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" fill="#245da8" font-weight="400" text-anchor="middle">mean of E rows</text>
+<text x="253.0" y="242.82" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" fill="#245da8" font-weight="400" text-anchor="middle">mean of vectors</text>
 <line x1="253" y1="272" x2="253" y2="303" stroke="#245da8" stroke-width="2" marker-end="url(#arrow)"/>
-<text x="255" y="341" font-family="DejaVu Sans,Arial,sans-serif" font-size="27" fill="#245da8" font-weight="400" text-anchor="middle">predict apples</text>
+<text x="255" y="341" font-family="DejaVu Sans,Arial,sans-serif" font-size="27" fill="#245da8" font-weight="400" text-anchor="middle">predict apple</text>
 <rect x="705" y="80" width="240" height="60" rx="10" fill="white" stroke="#087c73" stroke-width="2"/>
-<text x="825.0" y="118.16" font-family="DejaVu Sans,Arial,sans-serif" font-size="24" fill="#087c73" font-weight="400" text-anchor="middle">E[apples]</text>
+<text x="825.0" y="118.16" font-family="DejaVu Sans,Arial,sans-serif" font-size="24" fill="#087c73" font-weight="400" text-anchor="middle">word vector: apple</text>
 <line x1="825" y1="147" x2="825" y2="200" stroke="#087c73" stroke-width="2" marker-end="url(#arrow)"/>
 <text x="825" y="236" font-family="DejaVu Sans,Arial,sans-serif" font-size="25" fill="#087c73" font-weight="400" text-anchor="middle">separate predictions</text>
 <line x1="785" y1="253" x2="686" y2="297" stroke="#087c73" stroke-width="2" marker-end="url(#arrow)"/>
 <line x1="865" y1="253" x2="963" y2="297" stroke="#087c73" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="600" y="310" width="170" height="55" rx="10" fill="white" stroke="#087c73" stroke-width="2"/>
-<text x="685.0" y="345.66" font-family="DejaVu Sans,Arial,sans-serif" font-size="24" fill="#087c73" font-weight="400" text-anchor="middle">are</text>
+<text x="685.0" y="345.66" font-family="DejaVu Sans,Arial,sans-serif" font-size="24" fill="#087c73" font-weight="400" text-anchor="middle">peel</text>
 <rect x="875" y="310" width="170" height="55" rx="10" fill="white" stroke="#087c73" stroke-width="2"/>
-<text x="960.0" y="345.66" font-family="DejaVu Sans,Arial,sans-serif" font-size="24" fill="#087c73" font-weight="400" text-anchor="middle">tasty</text>
+<text x="960.0" y="345.66" font-family="DejaVu Sans,Arial,sans-serif" font-size="24" fill="#087c73" font-weight="400" text-anchor="middle">the</text>
 </svg>

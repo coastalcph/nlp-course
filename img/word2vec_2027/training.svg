@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="370" viewBox="0 0 1100 370" role="img">
+<title>Initialize random word vectors, predict context and learn from the error</title>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L7,3 z" fill="context-stroke"/></marker></defs>
+<rect width="1100" height="100%" fill="white"/>
+<text x="355" y="37" font-family="DejaVu Sans,Arial,sans-serif" font-size="26" fill="#245da8" font-weight="700" text-anchor="middle">Small random values</text>
+<text x="355" y="68" font-family="DejaVu Sans,Arial,sans-serif" font-size="24" fill="#245da8" font-weight="400" text-anchor="middle">at initialization</text>
+<text x="950" y="37" font-family="DejaVu Sans,Arial,sans-serif" font-size="25" fill="#087c73" font-weight="700" text-anchor="middle">Observed context</text>
+<text x="950" y="73" font-family="DejaVu Sans,Arial,sans-serif" font-size="30" fill="#087c73" font-weight="400" text-anchor="middle">peel</text>
+<text x="90" y="177" font-family="DejaVu Sans,Arial,sans-serif" font-size="32" fill="#172b45" font-weight="700" text-anchor="middle">apple</text>
+<line x1="160" y1="167" x2="258" y2="167" stroke="#172b45" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="280" y="103" width="150" height="42" rx="0" fill="#eaf0f9" stroke="white" stroke-width="1.5"/>
+<text x="355" y="132" font-family="DejaVu Sans,Arial,sans-serif" font-size="27" fill="#245da8" font-weight="400" text-anchor="middle">0.02</text>
+<rect x="280" y="148" width="150" height="42" rx="0" fill="#eaf0f9" stroke="white" stroke-width="1.5"/>
+<text x="355" y="177" font-family="DejaVu Sans,Arial,sans-serif" font-size="27" fill="#245da8" font-weight="400" text-anchor="middle">−0.01</text>
+<rect x="280" y="193" width="150" height="42" rx="0" fill="#eaf0f9" stroke="white" stroke-width="1.5"/>
+<text x="355" y="222" font-family="DejaVu Sans,Arial,sans-serif" font-size="27" fill="#245da8" font-weight="400" text-anchor="middle">0.03</text>
+<text x="355" y="272" font-family="DejaVu Sans,Arial,sans-serif" font-size="26" fill="#245da8" font-weight="400" text-anchor="middle">word vector</text>
+<line x1="445" y1="167" x2="535" y2="167" stroke="#245da8" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="550" y="123" width="245" height="87" rx="10" fill="white" stroke="#087c73" stroke-width="2"/>
+<text x="672.5" y="175.0" font-family="DejaVu Sans,Arial,sans-serif" font-size="25" fill="#087c73" font-weight="400" text-anchor="middle">Context prediction</text>
+<line x1="810" y1="167" x2="865" y2="167" stroke="#087c73" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="880" y="123" width="175" height="87" rx="10" fill="white" stroke="#172b45" stroke-width="2"/>
+<text x="967.5" y="158.16" font-family="DejaVu Sans,Arial,sans-serif" font-size="24" fill="#172b45" font-weight="400" text-anchor="middle">Prediction</text>
+<text x="967.5" y="191.16" font-family="DejaVu Sans,Arial,sans-serif" font-size="24" fill="#172b45" font-weight="400" text-anchor="middle">error</text>
+<line x1="950" y1="87" x2="950" y2="115" stroke="#087c73" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="968" y1="221" x2="968" y2="306" stroke="#b45309" stroke-width="2.5"/>
+<line x1="968" y1="306" x2="355" y2="306" stroke="#b45309" stroke-width="2.5"/>
+<line x1="355" y1="306" x2="355" y2="281" stroke="#b45309" stroke-width="2.5" marker-end="url(#arrow)"/>
+<line x1="672" y1="306" x2="672" y2="223" stroke="#b45309" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="683" y="355" font-family="DejaVu Sans,Arial,sans-serif" font-size="26" fill="#b45309" font-weight="400" text-anchor="middle">Backpropagate error and update the weights</text>
+</svg>

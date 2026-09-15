@@ -2,7 +2,7 @@
 """Rebuild the word-embedding lecture's exact SVG diagrams and measured plots.
 
 Run from any directory: python scripts/build_word2vec_figures.py
-Requires NumPy and Matplotlib. The experiment lives in the notebook cell tagged
+Requires NumPy and Matplotlib. The experiment lives in the optional-notes notebook cell tagged
 word2vec-demo; this script executes that cell rather than duplicating the trainer.
 No network, pretrained model, GPU, or image-generation service is needed.
 """
@@ -18,7 +18,7 @@ import numpy as np
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'img' / 'word2vec_2027'
 OUT.mkdir(parents=True, exist_ok=True)
-NOTEBOOK = ROOT / 'chapters' / 'dl-representations_simple.ipynb'
+NOTEBOOK = ROOT / 'chapters' / 'dl-representations_notes.ipynb'
 notebook = json.loads(NOTEBOOK.read_text())
 demo_cells = [c for c in notebook['cells']
               if 'word2vec-demo' in c['metadata'].get('tags', [])]
@@ -94,26 +94,6 @@ def save_plot(fig, name):
     plt.close(fig)
 
 
-# Quiz geometry: values are calculated, not sketched to imply a preferred answer.
-query = np.array([1., 1.])
-candidates = np.array([[3., 3.], [1., .4], [5., -1.], [-1., -1.]])
-cosine_scores = candidates @ query / (np.linalg.norm(candidates, axis=1)*np.linalg.norm(query))
-fig, ax = plt.subplots(figsize=(11, 3.6), layout='constrained')
-for vector, label, color, offset in zip(
-        [query, *candidates], ['q = (1, 1)', 'A = (3, 3)', 'B = (1, 0.4)', 'C = (5, −1)', 'D = (−1, −1)'],
-        [INK, TEAL, BLUE, ORANGE, '#7c3c88'],
-        [(-65, 11), (8, 0), (12, -8), (-88, -24), (-60, -23)]):
-    ax.annotate('', xy=vector, xytext=(0, 0), arrowprops={'arrowstyle': '-|>', 'color': color, 'lw': 2.6})
-    ax.annotate(label, xy=vector, xytext=offset, textcoords='offset points', color=color, fontsize=16, weight='bold')
-ax.set(xlim=(-2.1, 5.7), ylim=(-1.9, 3.6), aspect='equal')
-ax.spines[['top', 'right', 'bottom', 'left']].set_visible(False)
-ax.axhline(0, color=LINE, lw=1, zorder=0)
-ax.axvline(0, color=LINE, lw=1, zorder=0)
-ax.set_xticks(range(-1, 6)); ax.set_yticks(range(-1, 4))
-ax.tick_params(labelsize=13, length=0)
-ax.grid(color=PALE, zorder=0)
-save_plot(fig, 'cosine_quiz')
-
 s = Diagram(390, 'A tiny corpus and its context pairs')
 s.text(30, 40, '12 sentences', 27, weight=700)
 for i, (phrase, count) in enumerate([('apples are tasty', 4), ('oranges are tasty', 4), ('rabbits are furry', 2), ('hamsters are furry', 2)]):
@@ -165,41 +145,6 @@ s.lines(30, 275, ['Equal counts, but “tasty”', 'is a less frequent context.'
 s.lines(378, 275, ['Count → PPMI → truncated SVD', 'Dense vectors, still count-based.'], 23, TEAL)
 s.save('count_to_dense')
 
-s = Diagram(380, 'Continuous bag-of-words and skip-gram')
-s.text(255, 40, 'CBOW', 30, BLUE, 700, 'middle')
-s.text(825, 40, 'Skip-gram', 30, TEAL, 700, 'middle')
-s.line(550, 55, 550, 340)
-s.box(25, 80, 170, 60, ['are'], BLUE)
-s.box(300, 80, 170, 60, ['tasty'], BLUE)
-s.line(110, 146, 197, 199, BLUE, arrow=True)
-s.line(385, 146, 292, 199, BLUE, arrow=True)
-s.box(133, 205, 240, 60, ['mean of E rows'], BLUE, 23)
-s.line(253, 272, 253, 303, BLUE, arrow=True)
-s.text(255, 341, 'predict apples', 27, BLUE, anchor='middle')
-s.box(705, 80, 240, 60, ['E[apples]'], TEAL)
-s.line(825, 147, 825, 200, TEAL, arrow=True)
-s.text(825, 236, 'separate predictions', 25, TEAL, anchor='middle')
-s.line(785, 253, 686, 297, TEAL, arrow=True)
-s.line(865, 253, 963, 297, TEAL, arrow=True)
-s.box(600, 310, 170, 55, ['are'], TEAL)
-s.box(875, 310, 170, 55, ['tasty'], TEAL)
-s.save('cbow_skipgram')
-
-s = Diagram(390, 'Skip-gram architecture with full softmax')
-s.box(25, 120, 180, 95, ['apples', 'one-hot x'], INK)
-s.line(214, 168, 278, 168, BLUE, arrow=True)
-s.box(290, 100, 210, 136, ['Input table E', '|V| × d', 'select one row'], BLUE, 24)
-s.text(393, 283, 'h = E[apples]', 25, BLUE, anchor='middle')
-s.line(510, 168, 584, 168, BLUE, arrow=True)
-s.box(595, 100, 210, 136, ['Output table O', '|V| × d', 'dot products'], TEAL, 24)
-s.line(817, 168, 886, 168, TEAL, arrow=True)
-s.box(895, 110, 180, 116, ['softmax', 'p(context', '| apples)'], INK, 23)
-s.text(700, 283, 'z = O h', 25, TEAL, anchor='middle')
-s.line(322, 328, 777, 328, MUTED, sw=2)
-s.lines(550, 365, ['Train both tables by reducing prediction loss.'], 26, anchor='middle')
-s.text(550, 42, 'A lookup / linear projection followed by an output layer', 27, weight=700, anchor='middle')
-s.save('architecture')
-
 s = Diagram(400, 'Original word2vec initialization')
 s.text(260, 38, 'Input E: small random values', 27, BLUE, 700, 'middle')
 s.text(805, 38, 'Output O: all zeros', 27, TEAL, 700, 'middle')
@@ -209,16 +154,6 @@ s.text(303, 318, 'Uniform: −0.5/d to +0.5/d', 23, BLUE, anchor='middle')
 s.text(828, 318, 'Every initial dot product is 0', 23, TEAL, anchor='middle')
 s.text(550, 375, 'Shown: four words, first three coordinates of d = 8', 22, MUTED, anchor='middle')
 s.save('initialization')
-
-s = Diagram(315, 'Initialization quiz with four options')
-s.box(45, 25, 210, 78, ['e ≠ 0'], BLUE, 30)
-s.text(365, 74, 'score = oᵀe', 29, anchor='middle')
-s.box(480, 25, 210, 78, ['o = 0'], TEAL, 30)
-s.text(880, 74, 'Take one SGD step.', 25, anchor='middle')
-for x,y,label in [(45,150,'A   Input E only'), (565,150,'B   Output O only'),
-                  (45,236,'C   Both tables'), (565,236,'D   Neither table')]:
-    s.box(x, y, 470, 65, [label], INK, 25)
-s.save('init_quiz')
 
 fig, ax = plt.subplots(figsize=(11, 3.4), layout='constrained')
 colors = [TEAL if word == 'tasty' else '#b6cae5' for word in words]
@@ -243,18 +178,6 @@ for y, label, score_label, color in [(38, 'O[tasty]', 'Observed pair: y = 1', TE
     s.text(710, y+42, score_label, 25, color)
 s.text(550, 350, 'k = 2 noise samples • q(c) ∝ frequency(c)⁰·⁷⁵ • scores are independent sigmoids', 22, MUTED, anchor='middle')
 s.save('negative_sampling')
-
-s = Diagram(355, 'Which parameter rows does one SGNS example touch?')
-s.text(550, 38, 'Centre: apples     Positive: tasty     Noise: furry, rabbits', 27, weight=700, anchor='middle')
-options = [
-    (25, 85, ['A   Every row of E', '     and every row of O']),
-    (565, 85, ['B   E[apples, tasty, furry, rabbits]', '     No rows of O']),
-    (25, 224, ['C   E[apples]', '     O[tasty, furry, rabbits]']),
-    (565, 224, ['D   E[apples]', '     Every row of O']),
-]
-for x,y,lines in options:
-    s.box(x, y, 510, 112, lines, INK, 24)
-s.save('rows_quiz')
 
 # A separate worked 2D step. Use copies to make simultaneous gradients explicit.
 e0 = np.array([1., 0.]); o0 = np.array([[0., 1.], [0., -1.]])
@@ -291,24 +214,6 @@ s.line(510, 388, 610, 388, INK, arrow=True)
 s.text(748, 398, f'{after_loss:.3f}', 25, TEAL, weight=700, anchor='middle')
 s.save('gradient_step')
 
-s = Diagram(410, 'Train shared embedding tables over many context windows')
-s.box(25, 35, 285, 90, ['Build vocabulary', 'and word frequencies'], INK, 23)
-s.line(322, 80, 383, 80, INK, arrow=True)
-s.box(395, 35, 285, 90, ['Initialize E and O', 'once'], BLUE, 24)
-s.line(692, 80, 753, 80, BLUE, arrow=True)
-s.box(765, 35, 305, 90, ['Extract observed', 'window pairs'], INK, 24)
-s.line(917, 136, 917, 221, INK, arrow=True)
-s.box(765, 235, 305, 90, ['Sample noise', 'for a pair'], ORANGE, 24)
-s.line(750, 280, 691, 280, ORANGE, arrow=True)
-s.box(395, 235, 285, 90, ['Compute loss', 'and gradients'], INK, 24)
-s.line(382, 280, 322, 280, BLUE, arrow=True)
-s.box(25, 235, 285, 90, ['Update selected', 'E and O rows'], BLUE, 24)
-s.line(170, 337, 170, 373, BLUE)
-s.line(170, 373, 917, 373, BLUE)
-s.line(917, 373, 917, 335, BLUE, arrow=True)
-s.text(535, 401, 'Next pair / next epoch: reuse the updated tables', 23, BLUE, anchor='middle')
-s.save('training_loop')
-
 fig = plt.figure(figsize=(11, 4.3), layout='constrained')
 grid = fig.add_gridspec(1, 3, width_ratios=[1, 1, 1.1])
 labels = ['apples', 'oranges', 'rabbits', 'hamsters']
@@ -339,36 +244,6 @@ ax.annotate(f"{demo['loss_history'][-1]:.3f}", xy=(400,demo['loss_history'][-1])
 fig.supxlabel('Input–input cosine similarities (same scale: −1 to +1)', fontsize=16)
 save_plot(fig, 'training_results')
 
-s = Diagram(360, 'Training scores and downstream word vectors use different table roles')
-s.text(275, 38, 'During training', 28, weight=700, anchor='middle')
-s.text(825, 38, 'A common downstream choice', 27, weight=700, anchor='middle')
-s.line(550, 57, 550, 330)
-s.box(25, 85, 220, 70, ['E[apples]'], BLUE)
-s.box(300, 85, 220, 70, ['O[tasty]'], TEAL)
-s.line(135, 163, 220, 225, BLUE, arrow=True)
-s.line(410, 163, 320, 225, TEAL, arrow=True)
-s.text(275, 265, 'input–output dot product', 25, anchor='middle')
-s.box(605, 85, 205, 70, ['E[apples]'], BLUE)
-s.box(855, 85, 220, 70, ['E[oranges]'], BLUE)
-s.line(710, 163, 775, 225, BLUE, arrow=True)
-s.line(965, 163, 882, 225, BLUE, arrow=True)
-s.text(825, 265, 'input–input cosine', 25, BLUE, anchor='middle')
-s.text(825, 326, 'Reuse E as the embedding lookup.', 23, MUTED, anchor='middle')
-s.save('export_vectors')
-
-s = Diagram(385, 'One context signal, two learning routes')
-s.box(25, 145, 235, 80, ['Context pairs', 'from the corpus'], INK, 23)
-s.line(270, 173, 362, 93, BLUE, arrow=True)
-s.line(270, 195, 362, 285, TEAL, arrow=True)
-s.box(377, 45, 280, 98, ['Aggregate counts', 'and weight a matrix'], BLUE, 23)
-s.box(377, 235, 280, 98, ['Sample examples', 'and optimize predictions'], TEAL, 23)
-s.line(670, 94, 740, 94, BLUE, arrow=True)
-s.line(670, 284, 740, 284, TEAL, arrow=True)
-s.box(755, 45, 315, 98, ['PPMI + SVD', 'dense word vectors'], BLUE, 25)
-s.box(755, 235, 315, 98, ['Word2vec', 'dense word vectors'], TEAL, 25)
-s.text(610, 192, 'Related evidence; different objectives', 25, MUTED, anchor='middle')
-s.save('shared_evidence')
-
 s = Diagram(320, 'Low-rank score matrix and the shifted-PMI connection')
 s.box(25, 50, 180, 150, ['E', '|V| × d'], BLUE, 29)
 s.text(235, 139, '×', 40, anchor='middle')
@@ -381,22 +256,103 @@ s.text(550, 252, 'The connection is about the objective’s preferred dot produc
 s.text(550, 294, 'It does not initialize word2vec from a count matrix.', 24, MUTED, anchor='middle')
 s.save('implicit_matrix')
 
-s = Diagram(360, 'CBOW learning compared with mean pooling a sentence')
-s.text(265, 38, 'CBOW: learn word vectors', 27, BLUE, 700, 'middle')
-s.text(824, 38, 'Mean pooling: represent a sentence', 25, TEAL, 700, 'middle')
-s.line(550, 60, 550, 335)
-s.box(30, 82, 470, 70, ['context E[are], E[tasty]'], BLUE, 24)
-s.line(265, 160, 265, 195, BLUE, arrow=True)
-s.box(130, 208, 270, 64, ['mean → predict apples'], BLUE, 23)
-s.text(265, 330, 'Prediction loss updates embeddings.', 23, BLUE, anchor='middle')
-s.box(584, 82, 490, 70, ['E[apples], E[are], E[tasty]'], TEAL, 24)
-s.line(829, 160, 829, 195, TEAL, arrow=True)
-s.box(678, 208, 303, 64, ['mean → sentence vector'], TEAL, 23)
-s.text(829, 330, 'No extra training is required to pool.', 22, TEAL, anchor='middle')
-s.save('pooling_comparison')
+s = Diagram(380, 'Continuous bag-of-words and skip-gram')
+s.text(255, 40, 'CBOW', 30, BLUE, 700, 'middle')
+s.text(825, 40, 'Skip-gram', 30, TEAL, 700, 'middle')
+s.line(550, 55, 550, 340)
+s.box(25, 80, 170, 60, ['peel'], BLUE)
+s.box(300, 80, 170, 60, ['the'], BLUE)
+s.line(110, 146, 197, 199, BLUE, arrow=True)
+s.line(385, 146, 292, 199, BLUE, arrow=True)
+s.box(133, 205, 240, 60, ['mean of vectors'], BLUE, 23)
+s.line(253, 272, 253, 303, BLUE, arrow=True)
+s.text(255, 341, 'predict apple', 27, BLUE, anchor='middle')
+s.box(705, 80, 240, 60, ['word vector: apple'], TEAL)
+s.line(825, 147, 825, 200, TEAL, arrow=True)
+s.text(825, 236, 'separate predictions', 25, TEAL, anchor='middle')
+s.line(785, 253, 686, 297, TEAL, arrow=True)
+s.line(865, 253, 963, 297, TEAL, arrow=True)
+s.box(600, 310, 170, 55, ['peel'], TEAL)
+s.box(875, 310, 170, 55, ['the'], TEAL)
+s.save('cbow_skipgram')
 
-print(json.dumps({'figures': len(list(OUT.glob('*.svg'))), 'sentences': len(demo['corpus']),
-                  'pairs': len(demo['pairs']), 'cosine_quiz': cosine_scores.tolist(),
-                  'initial_loss': demo['loss_history'][0], 'final_loss': demo['loss_history'][-1],
-                  'trained_noun_cosines': demo['trained_cosines'].round(3).tolist(),
-                  'worked_step_scores': after_scores.tolist(), 'worked_step_loss': float(after_loss)}, indent=2))
+# The lecture keeps the original cosine question, with a larger plotting area.
+query = np.array([1., 1.])
+candidates = np.array([[3., 3.], [1., .4], [5., -1.], [-1., -1.]])
+fig, ax = plt.subplots(figsize=(8.2, 4.8), layout='constrained')
+for vector, label, color, offset in zip(
+        candidates, ['A = (3, 3)', 'B = (1, 0.4)', 'C = (5, −1)', 'D = (−1, −1)'],
+        [TEAL, BLUE, ORANGE, '#7c3c88'], [(8, 0), (13, -10), (-95, -29), (-75, -28)]):
+    ax.annotate('', xy=vector, xytext=(0, 0), arrowprops={'arrowstyle': '-|>', 'color': color, 'lw': 2.8})
+    ax.annotate(label, xy=vector, xytext=offset, textcoords='offset points', color=color, fontsize=22, weight='bold')
+ax.annotate('', xy=query, xytext=(0, 0), arrowprops={'arrowstyle': '-|>', 'color': INK, 'lw': 3.2})
+ax.annotate('q = (1, 1)', xy=query, xytext=(-105, 15), textcoords='offset points', color=INK, fontsize=22, weight='bold')
+ax.set(xlim=(-2.3, 6.2), ylim=(-2, 3.7), aspect='equal')
+ax.spines[['top','right','bottom','left']].set_visible(False)
+ax.axhline(0,color=LINE,lw=1,zorder=0);ax.axvline(0,color=LINE,lw=1,zorder=0)
+ax.set_xticks(range(-1,6));ax.set_yticks(range(-1,4))
+ax.tick_params(labelsize=13,length=0);ax.grid(color=PALE,zorder=0)
+save_plot(fig,'cosine_quiz')
+
+# A feed-forward network diagram connects to the lecture's opening MLP figure.
+s=Diagram(430, 'The skip-gram network and the word vector inside it')
+s.text(200,35,'One-hot input',28,INK,700,'middle')
+s.text(550,35,'Word embedding',28,BLUE,700,'middle')
+s.text(925,35,'Context predictions',28,TEAL,700,'middle')
+labels=['apple','orange','rabbit','⋮','peel','slice']
+ys=[88,140,192,244,296,348]
+hidden_ys=[130,218,306]
+for i,y in enumerate(ys):
+    if labels[i]=='⋮': continue
+    for hy in hidden_ys:
+        s.line(258,y,530,hy,LINE,1.4)
+        s.line(570,hy,882,y,LINE,1.4)
+# The active one-hot coordinate selects the corresponding learned weights.
+for hy in hidden_ys: s.line(258,ys[0],530,hy,BLUE,2.7)
+for i,y in enumerate(ys):
+    if labels[i]=='⋮':
+        s.text(240,y+7,'⋮',31,MUTED,anchor='middle')
+        s.text(900,y+7,'⋮',31,MUTED,anchor='middle')
+        continue
+    s.text(197,y+8,labels[i],26,INK,anchor='end')
+    fill=BLUE if i==0 else 'white'
+    s.parts.append(f'<circle cx="240" cy="{y}" r="18" fill="{fill}" stroke="{BLUE}" stroke-width="2"/>')
+    s.text(240,y+7,'1' if i==0 else '0',21,'white' if i==0 else MUTED,anchor='middle')
+    s.parts.append(f'<circle cx="900" cy="{y}" r="18" fill="white" stroke="{TEAL}" stroke-width="2"/>')
+    s.text(934,y+8,labels[i],26,TEAL if labels[i]=='peel' else INK,weight=700 if labels[i]=='peel' else 400)
+for i,y in enumerate(hidden_ys):
+    s.parts.append(f'<circle cx="550" cy="{y}" r="20" fill="white" stroke="{BLUE}" stroke-width="2.5"/>')
+    s.text(550,y+7,f'h{i+1}',19,BLUE,anchor='middle')
+s.text(382,393,'input weights',25,BLUE,anchor='middle')
+s.text(550,423,'linear projection',23,MUTED,anchor='middle')
+s.text(725,393,'output weights',25,TEAL,anchor='middle')
+s.text(925,423,'softmax',23,MUTED,anchor='middle')
+s.save('network')
+
+# Training overview: a forward prediction and a backward weight update.
+s=Diagram(370, 'Initialize random word vectors, predict context and learn from the error')
+s.text(355,37,'Small random values',26,BLUE,700,'middle')
+s.text(355,68,'at initialization',24,BLUE,anchor='middle')
+s.text(950,37,'Observed context',25,TEAL,700,'middle')
+s.text(950,73,'peel',30,TEAL,anchor='middle')
+s.text(90,177,'apple',32,INK,700,'middle')
+s.line(160,167,258,167,INK,arrow=True)
+for y,val in [(103,'0.02'),(148,'−0.01'),(193,'0.03')]:
+    s.rect(280,y,150,42,fill='#eaf0f9',stroke='white',radius=0)
+    s.text(355,y+29,val,27,BLUE,anchor='middle')
+s.text(355,272,'word vector',26,BLUE,anchor='middle')
+s.line(445,167,535,167,BLUE,arrow=True)
+s.box(550,123,245,87,['Context prediction'],TEAL,25)
+s.line(810,167,865,167,TEAL,arrow=True)
+s.box(880,123,175,87,['Prediction','error'],INK,24)
+s.line(950,87,950,115,TEAL,arrow=True)
+# Error is propagated to both sets of weights before an update.
+s.line(968,221,968,306,ORANGE,2.5)
+s.line(968,306,355,306,ORANGE,2.5)
+s.line(355,306,355,281,ORANGE,2.5,arrow=True)
+s.line(672,306,672,223,ORANGE,2.5,arrow=True)
+s.text(683,355,'Backpropagate error and update the weights',26,ORANGE,anchor='middle')
+s.save('training')
+
+print(json.dumps({'figures':len(list(OUT.glob('*.svg'))),
+                  'notes_final_loss':demo['loss_history'][-1]},indent=2))
