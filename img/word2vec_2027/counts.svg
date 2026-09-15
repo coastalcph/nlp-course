@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="420" viewBox="0 0 1100 420" role="img">
+<title>Observed centre-context counts</title>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L7,3 z" fill="context-stroke"/></marker></defs>
+<rect width="1100" height="100%" fill="white"/>
+<text x="470" y="35" font-family="DejaVu Sans,Arial,sans-serif" font-size="25" fill="#172b45" font-weight="700" text-anchor="middle">context word</text>
+<text x="128" y="114.24000000000001" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#172b45" font-weight="700" text-anchor="end">apples</text>
+<rect x="140" y="85" width="88" height="41" rx="2" fill="#e5eefb" stroke="white" stroke-width="1.5"/>
+<text x="184.0" y="113.81" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">0</text>
+<rect x="230" y="85" width="88" height="41" rx="2" fill="#e5eefb" stroke="white" stroke-width="1.5"/>
+<text x="274.0" y="113.81" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">0</text>
+<rect x="320" y="85" width="88" height="41" rx="2" fill="#e5eefb" stroke="white" stroke-width="1.5"/>
+<text x="364.0" y="113.81" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">0</text>
+<rect x="410" y="85" width="88" height="41" rx="2" fill="#e5eefb" stroke="white" stroke-width="1.5"/>
+<text x="454.0" y="113.81" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">0</text>
+<rect x="500" y="85" width="88" height="41" rx="2" fill="#e5eefb" stroke="white" stroke-width="1.5"/>
+<text x="544.0" y="113.81" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">4</text>
+<rect x="590" y="85" width="88" height="41" rx="2" fill="#e5eefb" stroke="white" stroke-width="1.5"/>
+<text x="634.0" y="113.81" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">4</text>
+<rect x="680" y="85" width="88" height="41" rx="2" fill="#e5eefb" stroke="white" stroke-width="1.5"/>
+<text x="724.0" y="113.81" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">0</text>
+<text x="128" y="157.24" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#172b45" font-weight="700" text-anchor="end">oranges</text>
+<rect x="140" y="128" width="88" height="41" rx="2" fill="#e5eefb" stroke="white" stroke-width="1.5"/>
+<text x="184.0" y="156.81" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">0</text>
+<rect x="230" y="128" width="88" height="41" rx="2" fill="#e5eefb" stroke="white" stroke-width="1.5"/>
+<text x="274.0" y="156.81" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">0</text>
+<rect x="320" y="128" width="88" height="41" rx="2" fill="#e5eefb" stroke="white" stroke-width="1.5"/>
+<text x="364.0" y="156.81" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">0</text>
+<rect x="410" y="128" width="88" height="41" rx="2" fill="#e5eefb" stroke="white" stroke-width="1.5"/>
+<text x="454.0" y="156.81" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">0</text>
+<rect x="500" y="128" width="88" height="41" rx="2" fill="#e5eefb" stroke="white" stroke-width="1.5"/>
+<text x="544.0" y="156.81" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">4</text>
+<rect x="590" y="128" width="88" height="41" rx="2" fill="#e5eefb" stroke="white" stroke-width="1.5"/>
+<text x="634.0" y="156.81" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">4</text>
+<rect x="680" y="128" width="88" height="41" rx="2" fill="#e5eefb" stroke="white" stroke-width="1.5"/>
+<text x="724.0" y="156.81" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">0</text>
+<text x="128" y="200.24" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#172b45" font-weight="400" text-anchor="end">rabbits</text>
+<rect x="140" y="171" width="88" height="41" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="184.0" y="199.81" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">0</text>
+<rect x="230" y="171" width="88" height="41" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="274.0" y="199.81" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">0</text>
+<rect x="320" y="171" width="88" height="41" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="364.0" y="199.81" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">0</text>
+<rect x="410" y="171" width="88" height="41" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="454.0" y="199.81" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">0</text>
+<rect x="500" y="171" width="88" height="41" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="544.0" y="199.81" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">2</text>
+<rect x="590" y="171" width="88" height="41" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="634.0" y="199.81" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">0</text>
+<rect x="680" y="171" width="88" height="41" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="724.0" y="199.81" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">2</text>
+<text x="128" y="243.24" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#172b45" font-weight="400" text-anchor="end">hamsters</text>
+<rect x="140" y="214" width="88" height="41" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="184.0" y="242.81" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">0</text>
+<rect x="230" y="214" width="88" height="41" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="274.0" y="242.81" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">0</text>
+<rect x="320" y="214" width="88" height="41" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="364.0" y="242.81" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">0</text>
+<rect x="410" y="214" width="88" height="41" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="454.0" y="242.81" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">0</text>
+<rect x="500" y="214" width="88" height="41" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="544.0" y="242.81" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">2</text>
+<rect x="590" y="214" width="88" height="41" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="634.0" y="242.81" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">0</text>
+<rect x="680" y="214" width="88" height="41" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="724.0" y="242.81" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">2</text>
+<text x="128" y="286.24" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#172b45" font-weight="400" text-anchor="end">are</text>
+<rect x="140" y="257" width="88" height="41" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="184.0" y="285.81" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">4</text>
+<rect x="230" y="257" width="88" height="41" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="274.0" y="285.81" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">4</text>
+<rect x="320" y="257" width="88" height="41" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="364.0" y="285.81" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">2</text>
+<rect x="410" y="257" width="88" height="41" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="454.0" y="285.81" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">2</text>
+<rect x="500" y="257" width="88" height="41" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="544.0" y="285.81" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">0</text>
+<rect x="590" y="257" width="88" height="41" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="634.0" y="285.81" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">8</text>
+<rect x="680" y="257" width="88" height="41" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="724.0" y="285.81" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">4</text>
+<text x="128" y="329.24" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#172b45" font-weight="400" text-anchor="end">tasty</text>
+<rect x="140" y="300" width="88" height="41" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="184.0" y="328.81" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">4</text>
+<rect x="230" y="300" width="88" height="41" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="274.0" y="328.81" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">4</text>
+<rect x="320" y="300" width="88" height="41" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="364.0" y="328.81" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">0</text>
+<rect x="410" y="300" width="88" height="41" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="454.0" y="328.81" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">0</text>
+<rect x="500" y="300" width="88" height="41" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="544.0" y="328.81" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">8</text>
+<rect x="590" y="300" width="88" height="41" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="634.0" y="328.81" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">0</text>
+<rect x="680" y="300" width="88" height="41" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="724.0" y="328.81" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">0</text>
+<text x="128" y="372.24" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#172b45" font-weight="400" text-anchor="end">furry</text>
+<rect x="140" y="343" width="88" height="41" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="184.0" y="371.81" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">0</text>
+<rect x="230" y="343" width="88" height="41" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="274.0" y="371.81" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">0</text>
+<rect x="320" y="343" width="88" height="41" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="364.0" y="371.81" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">2</text>
+<rect x="410" y="343" width="88" height="41" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="454.0" y="371.81" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">2</text>
+<rect x="500" y="343" width="88" height="41" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="544.0" y="371.81" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">4</text>
+<rect x="590" y="343" width="88" height="41" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="634.0" y="371.81" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">0</text>
+<rect x="680" y="343" width="88" height="41" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="724.0" y="371.81" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">0</text>
+<text x="185.0" y="71" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" fill="#172b45" font-weight="400" text-anchor="middle">apples</text>
+<text x="275.0" y="71" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" fill="#172b45" font-weight="400" text-anchor="middle">oranges</text>
+<text x="365.0" y="71" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" fill="#172b45" font-weight="400" text-anchor="middle">rabbits</text>
+<text x="455.0" y="71" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" fill="#172b45" font-weight="400" text-anchor="middle">hamsters</text>
+<text x="545.0" y="71" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" fill="#172b45" font-weight="400" text-anchor="middle">are</text>
+<text x="635.0" y="71" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" fill="#172b45" font-weight="400" text-anchor="middle">tasty</text>
+<text x="725.0" y="71" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" fill="#172b45" font-weight="400" text-anchor="middle">furry</text>
+<line x1="798" y1="92" x2="798" y2="165" stroke="#087c73" stroke-width="4"/>
+<text x="830" y="112" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" fill="#087c73" font-weight="400" text-anchor="start">Same contexts</text>
+<text x="830" y="146" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" fill="#087c73" font-weight="400" text-anchor="start">for apples</text>
+<text x="830" y="180" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" fill="#087c73" font-weight="400" text-anchor="start">and oranges</text>
+<text x="825" y="280" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" fill="#52637a" font-weight="400" text-anchor="start">No apples–oranges</text>
+<text x="825" y="314" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" fill="#52637a" font-weight="400" text-anchor="start">pair is needed.</text>
+<text x="36" y="409" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" fill="#172b45" font-weight="400" text-anchor="start">Rows are word representations; columns are context features.</text>
+</svg>

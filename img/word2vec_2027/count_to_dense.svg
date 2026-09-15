@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="385" viewBox="0 0 1100 385" role="img">
+<title>From co-occurrence counts to dense count-based vectors</title>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L7,3 z" fill="context-stroke"/></marker></defs>
+<rect width="1100" height="100%" fill="white"/>
+<text x="150" y="40" font-family="DejaVu Sans,Arial,sans-serif" font-size="27" fill="#245da8" font-weight="700" text-anchor="middle">Count pairs</text>
+<text x="528" y="40" font-family="DejaVu Sans,Arial,sans-serif" font-size="27" fill="#087c73" font-weight="700" text-anchor="middle">Weight association</text>
+<text x="929" y="40" font-family="DejaVu Sans,Arial,sans-serif" font-size="27" fill="#245da8" font-weight="700" text-anchor="middle">Compress to d = 2</text>
+<rect x="25" y="90" width="250" height="122" rx="10" fill="white" stroke="#245da8" stroke-width="2"/>
+<text x="150.0" y="142.32" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" fill="#245da8" font-weight="400" text-anchor="middle">apples–are: 4</text>
+<text x="150.0" y="175.32" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" fill="#245da8" font-weight="400" text-anchor="middle">apples–tasty: 4</text>
+<line x1="290" y1="150" x2="350" y2="150" stroke="#52637a" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="370" y="90" width="310" height="122" rx="10" fill="white" stroke="#087c73" stroke-width="2"/>
+<text x="525.0" y="142.32" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" fill="#087c73" font-weight="400" text-anchor="middle">PPMI: 0.405</text>
+<text x="525.0" y="175.32" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" fill="#087c73" font-weight="400" text-anchor="middle">PPMI: 0.811</text>
+<line x1="695" y1="150" x2="725" y2="150" stroke="#52637a" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="831" y="106.52000000000001" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#172b45" font-weight="400" text-anchor="end">apples</text>
+<rect x="843" y="80" width="97" height="37" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="891.5" y="106.13" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">0.23</text>
+<rect x="942" y="80" width="97" height="37" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="990.5" y="106.13" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">-0.02</text>
+<text x="831" y="145.52" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#172b45" font-weight="400" text-anchor="end">oranges</text>
+<rect x="843" y="119" width="97" height="37" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="891.5" y="145.13" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">0.23</text>
+<rect x="942" y="119" width="97" height="37" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="990.5" y="145.13" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">-0.02</text>
+<text x="831" y="184.52" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#172b45" font-weight="400" text-anchor="end">rabbits</text>
+<rect x="843" y="158" width="97" height="37" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="891.5" y="184.13" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">1.11</text>
+<rect x="942" y="158" width="97" height="37" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="990.5" y="184.13" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">-1.08</text>
+<text x="831" y="223.52" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#172b45" font-weight="400" text-anchor="end">hamsters</text>
+<rect x="843" y="197" width="97" height="37" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="891.5" y="223.13" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">1.11</text>
+<rect x="942" y="197" width="97" height="37" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="990.5" y="223.13" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">-1.08</text>
+<text x="892.5" y="66" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" fill="#172b45" font-weight="400" text-anchor="middle">axis 1</text>
+<text x="991.5" y="66" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" fill="#172b45" font-weight="400" text-anchor="middle">axis 2</text>
+<text x="920" y="278" font-family="DejaVu Sans,Arial,sans-serif" font-size="30" fill="#245da8" font-weight="400" text-anchor="middle">U₂ Σ₂</text>
+<text x="30" y="275" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" fill="#172b45" font-weight="400" text-anchor="start">Equal counts, but “tasty”</text>
+<text x="30" y="309" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" fill="#172b45" font-weight="400" text-anchor="start">is a less frequent context.</text>
+<text x="378" y="275" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" fill="#087c73" font-weight="400" text-anchor="start">Count → PPMI → truncated SVD</text>
+<text x="378" y="309" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" fill="#087c73" font-weight="400" text-anchor="start">Dense vectors, still count-based.</text>
+</svg>

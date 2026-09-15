@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="390" viewBox="0 0 1100 390" role="img">
+<title>A tiny corpus and its context pairs</title>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L7,3 z" fill="context-stroke"/></marker></defs>
+<rect width="1100" height="100%" fill="white"/>
+<text x="30" y="40" font-family="DejaVu Sans,Arial,sans-serif" font-size="27" fill="#172b45" font-weight="700" text-anchor="start">12 sentences</text>
+<text x="35" y="100" font-family="DejaVu Sans,Arial,sans-serif" font-size="26" fill="#172b45" font-weight="400" text-anchor="start">apples are tasty</text>
+<text x="340" y="100" font-family="DejaVu Sans,Arial,sans-serif" font-size="25" fill="#52637a" font-weight="400" text-anchor="start">× 4</text>
+<text x="35" y="155" font-family="DejaVu Sans,Arial,sans-serif" font-size="26" fill="#172b45" font-weight="400" text-anchor="start">oranges are tasty</text>
+<text x="340" y="155" font-family="DejaVu Sans,Arial,sans-serif" font-size="25" fill="#52637a" font-weight="400" text-anchor="start">× 4</text>
+<text x="35" y="210" font-family="DejaVu Sans,Arial,sans-serif" font-size="26" fill="#172b45" font-weight="400" text-anchor="start">rabbits are furry</text>
+<text x="340" y="210" font-family="DejaVu Sans,Arial,sans-serif" font-size="25" fill="#52637a" font-weight="400" text-anchor="start">× 2</text>
+<text x="35" y="265" font-family="DejaVu Sans,Arial,sans-serif" font-size="26" fill="#172b45" font-weight="400" text-anchor="start">hamsters are furry</text>
+<text x="340" y="265" font-family="DejaVu Sans,Arial,sans-serif" font-size="25" fill="#52637a" font-weight="400" text-anchor="start">× 2</text>
+<line x1="415" y1="55" x2="415" y2="330" stroke="#cbd5e1" stroke-width="2"/>
+<text x="470" y="40" font-family="DejaVu Sans,Arial,sans-serif" font-size="27" fill="#172b45" font-weight="700" text-anchor="start">Zoom into one sentence</text>
+<rect x="470" y="85" width="160" height="65" rx="10" fill="white" stroke="#245da8" stroke-width="2"/>
+<text x="550.0" y="125.66" font-family="DejaVu Sans,Arial,sans-serif" font-size="24" fill="#245da8" font-weight="400" text-anchor="middle">apples</text>
+<rect x="665" y="85" width="160" height="65" rx="10" fill="white" stroke="#087c73" stroke-width="2"/>
+<text x="745.0" y="125.66" font-family="DejaVu Sans,Arial,sans-serif" font-size="24" fill="#087c73" font-weight="400" text-anchor="middle">are</text>
+<rect x="850" y="85" width="160" height="65" rx="10" fill="white" stroke="#087c73" stroke-width="2"/>
+<text x="930.0" y="125.66" font-family="DejaVu Sans,Arial,sans-serif" font-size="24" fill="#087c73" font-weight="400" text-anchor="middle">tasty</text>
+<text x="550" y="181" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" fill="#245da8" font-weight="400" text-anchor="middle">centre</text>
+<text x="837" y="181" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" fill="#087c73" font-weight="400" text-anchor="middle">context words</text>
+<line x1="555" y1="202" x2="555" y2="240" stroke="#245da8" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="555" y1="220" x2="905" y2="220" stroke="#245da8" stroke-width="2"/>
+<line x1="905" y1="220" x2="905" y2="245" stroke="#245da8" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="465" y="254" width="260" height="70" rx="10" fill="white" stroke="#245da8" stroke-width="2"/>
+<text x="595.0" y="297.16" font-family="DejaVu Sans,Arial,sans-serif" font-size="24" fill="#245da8" font-weight="400" text-anchor="middle">(apples, are)</text>
+<rect x="765" y="254" width="280" height="70" rx="10" fill="white" stroke="#245da8" stroke-width="2"/>
+<text x="905.0" y="297.16" font-family="DejaVu Sans,Arial,sans-serif" font-size="24" fill="#245da8" font-weight="400" text-anchor="middle">(apples, tasty)</text>
+<text x="550" y="375" font-family="DejaVu Sans,Arial,sans-serif" font-size="24" fill="#172b45" font-weight="400" text-anchor="middle">12 sentences × 6 ordered pairs = 72 training pairs</text>
+</svg>

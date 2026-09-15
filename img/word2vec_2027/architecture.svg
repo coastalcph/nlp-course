@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="390" viewBox="0 0 1100 390" role="img">
+<title>Skip-gram architecture with full softmax</title>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L7,3 z" fill="context-stroke"/></marker></defs>
+<rect width="1100" height="100%" fill="white"/>
+<rect x="25" y="120" width="180" height="95" rx="10" fill="white" stroke="#172b45" stroke-width="2"/>
+<text x="115.0" y="159.16" font-family="DejaVu Sans,Arial,sans-serif" font-size="24" fill="#172b45" font-weight="400" text-anchor="middle">apples</text>
+<text x="115.0" y="192.16" font-family="DejaVu Sans,Arial,sans-serif" font-size="24" fill="#172b45" font-weight="400" text-anchor="middle">one-hot x</text>
+<line x1="214" y1="168" x2="278" y2="168" stroke="#245da8" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="290" y="100" width="210" height="136" rx="10" fill="white" stroke="#245da8" stroke-width="2"/>
+<text x="395.0" y="143.16" font-family="DejaVu Sans,Arial,sans-serif" font-size="24" fill="#245da8" font-weight="400" text-anchor="middle">Input table E</text>
+<text x="395.0" y="176.16" font-family="DejaVu Sans,Arial,sans-serif" font-size="24" fill="#245da8" font-weight="400" text-anchor="middle">|V| × d</text>
+<text x="395.0" y="209.16" font-family="DejaVu Sans,Arial,sans-serif" font-size="24" fill="#245da8" font-weight="400" text-anchor="middle">select one row</text>
+<text x="393" y="283" font-family="DejaVu Sans,Arial,sans-serif" font-size="25" fill="#245da8" font-weight="400" text-anchor="middle">h = E[apples]</text>
+<line x1="510" y1="168" x2="584" y2="168" stroke="#245da8" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="595" y="100" width="210" height="136" rx="10" fill="white" stroke="#087c73" stroke-width="2"/>
+<text x="700.0" y="143.16" font-family="DejaVu Sans,Arial,sans-serif" font-size="24" fill="#087c73" font-weight="400" text-anchor="middle">Output table O</text>
+<text x="700.0" y="176.16" font-family="DejaVu Sans,Arial,sans-serif" font-size="24" fill="#087c73" font-weight="400" text-anchor="middle">|V| × d</text>
+<text x="700.0" y="209.16" font-family="DejaVu Sans,Arial,sans-serif" font-size="24" fill="#087c73" font-weight="400" text-anchor="middle">dot products</text>
+<line x1="817" y1="168" x2="886" y2="168" stroke="#087c73" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="895" y="110" width="180" height="116" rx="10" fill="white" stroke="#172b45" stroke-width="2"/>
+<text x="985.0" y="142.82" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" fill="#172b45" font-weight="400" text-anchor="middle">softmax</text>
+<text x="985.0" y="175.82" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" fill="#172b45" font-weight="400" text-anchor="middle">p(context</text>
+<text x="985.0" y="208.82" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" fill="#172b45" font-weight="400" text-anchor="middle">| apples)</text>
+<text x="700" y="283" font-family="DejaVu Sans,Arial,sans-serif" font-size="25" fill="#087c73" font-weight="400" text-anchor="middle">z = O h</text>
+<line x1="322" y1="328" x2="777" y2="328" stroke="#52637a" stroke-width="2"/>
+<text x="550" y="365" font-family="DejaVu Sans,Arial,sans-serif" font-size="26" fill="#172b45" font-weight="400" text-anchor="middle">Train both tables by reducing prediction loss.</text>
+<text x="550" y="42" font-family="DejaVu Sans,Arial,sans-serif" font-size="27" fill="#172b45" font-weight="700" text-anchor="middle">A lookup / linear projection followed by an output layer</text>
+</svg>

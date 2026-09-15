@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="360" viewBox="0 0 1100 360" role="img">
+<title>CBOW learning compared with mean pooling a sentence</title>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L7,3 z" fill="context-stroke"/></marker></defs>
+<rect width="1100" height="100%" fill="white"/>
+<text x="265" y="38" font-family="DejaVu Sans,Arial,sans-serif" font-size="27" fill="#245da8" font-weight="700" text-anchor="middle">CBOW: learn word vectors</text>
+<text x="824" y="38" font-family="DejaVu Sans,Arial,sans-serif" font-size="25" fill="#087c73" font-weight="700" text-anchor="middle">Mean pooling: represent a sentence</text>
+<line x1="550" y1="60" x2="550" y2="335" stroke="#cbd5e1" stroke-width="2"/>
+<rect x="30" y="82" width="470" height="70" rx="10" fill="white" stroke="#245da8" stroke-width="2"/>
+<text x="265.0" y="125.16" font-family="DejaVu Sans,Arial,sans-serif" font-size="24" fill="#245da8" font-weight="400" text-anchor="middle">context E[are], E[tasty]</text>
+<line x1="265" y1="160" x2="265" y2="195" stroke="#245da8" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="130" y="208" width="270" height="64" rx="10" fill="white" stroke="#245da8" stroke-width="2"/>
+<text x="265.0" y="247.82" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" fill="#245da8" font-weight="400" text-anchor="middle">mean → predict apples</text>
+<text x="265" y="330" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" fill="#245da8" font-weight="400" text-anchor="middle">Prediction loss updates embeddings.</text>
+<rect x="584" y="82" width="490" height="70" rx="10" fill="white" stroke="#087c73" stroke-width="2"/>
+<text x="829.0" y="125.16" font-family="DejaVu Sans,Arial,sans-serif" font-size="24" fill="#087c73" font-weight="400" text-anchor="middle">E[apples], E[are], E[tasty]</text>
+<line x1="829" y1="160" x2="829" y2="195" stroke="#087c73" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="678" y="208" width="303" height="64" rx="10" fill="white" stroke="#087c73" stroke-width="2"/>
+<text x="829.5" y="247.82" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" fill="#087c73" font-weight="400" text-anchor="middle">mean → sentence vector</text>
+<text x="829" y="330" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" fill="#087c73" font-weight="400" text-anchor="middle">No extra training is required to pool.</text>
+</svg>

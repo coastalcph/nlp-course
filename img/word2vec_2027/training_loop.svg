@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="410" viewBox="0 0 1100 410" role="img">
+<title>Train shared embedding tables over many context windows</title>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L7,3 z" fill="context-stroke"/></marker></defs>
+<rect width="1100" height="100%" fill="white"/>
+<rect x="25" y="35" width="285" height="90" rx="10" fill="white" stroke="#172b45" stroke-width="2"/>
+<text x="167.5" y="71.32" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" fill="#172b45" font-weight="400" text-anchor="middle">Build vocabulary</text>
+<text x="167.5" y="104.32" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" fill="#172b45" font-weight="400" text-anchor="middle">and word frequencies</text>
+<line x1="322" y1="80" x2="383" y2="80" stroke="#172b45" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="395" y="35" width="285" height="90" rx="10" fill="white" stroke="#245da8" stroke-width="2"/>
+<text x="537.5" y="71.66" font-family="DejaVu Sans,Arial,sans-serif" font-size="24" fill="#245da8" font-weight="400" text-anchor="middle">Initialize E and O</text>
+<text x="537.5" y="104.66" font-family="DejaVu Sans,Arial,sans-serif" font-size="24" fill="#245da8" font-weight="400" text-anchor="middle">once</text>
+<line x1="692" y1="80" x2="753" y2="80" stroke="#245da8" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="765" y="35" width="305" height="90" rx="10" fill="white" stroke="#172b45" stroke-width="2"/>
+<text x="917.5" y="71.66" font-family="DejaVu Sans,Arial,sans-serif" font-size="24" fill="#172b45" font-weight="400" text-anchor="middle">Extract observed</text>
+<text x="917.5" y="104.66" font-family="DejaVu Sans,Arial,sans-serif" font-size="24" fill="#172b45" font-weight="400" text-anchor="middle">window pairs</text>
+<line x1="917" y1="136" x2="917" y2="221" stroke="#172b45" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="765" y="235" width="305" height="90" rx="10" fill="white" stroke="#b45309" stroke-width="2"/>
+<text x="917.5" y="271.66" font-family="DejaVu Sans,Arial,sans-serif" font-size="24" fill="#b45309" font-weight="400" text-anchor="middle">Sample noise</text>
+<text x="917.5" y="304.66" font-family="DejaVu Sans,Arial,sans-serif" font-size="24" fill="#b45309" font-weight="400" text-anchor="middle">for a pair</text>
+<line x1="750" y1="280" x2="691" y2="280" stroke="#b45309" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="395" y="235" width="285" height="90" rx="10" fill="white" stroke="#172b45" stroke-width="2"/>
+<text x="537.5" y="271.66" font-family="DejaVu Sans,Arial,sans-serif" font-size="24" fill="#172b45" font-weight="400" text-anchor="middle">Compute loss</text>
+<text x="537.5" y="304.66" font-family="DejaVu Sans,Arial,sans-serif" font-size="24" fill="#172b45" font-weight="400" text-anchor="middle">and gradients</text>
+<line x1="382" y1="280" x2="322" y2="280" stroke="#245da8" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="25" y="235" width="285" height="90" rx="10" fill="white" stroke="#245da8" stroke-width="2"/>
+<text x="167.5" y="271.66" font-family="DejaVu Sans,Arial,sans-serif" font-size="24" fill="#245da8" font-weight="400" text-anchor="middle">Update selected</text>
+<text x="167.5" y="304.66" font-family="DejaVu Sans,Arial,sans-serif" font-size="24" fill="#245da8" font-weight="400" text-anchor="middle">E and O rows</text>
+<line x1="170" y1="337" x2="170" y2="373" stroke="#245da8" stroke-width="2"/>
+<line x1="170" y1="373" x2="917" y2="373" stroke="#245da8" stroke-width="2"/>
+<line x1="917" y1="373" x2="917" y2="335" stroke="#245da8" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="535" y="401" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" fill="#245da8" font-weight="400" text-anchor="middle">Next pair / next epoch: reuse the updated tables</text>
+</svg>

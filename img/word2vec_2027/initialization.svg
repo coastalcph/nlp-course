@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="400" viewBox="0 0 1100 400" role="img">
+<title>Original word2vec initialization</title>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L7,3 z" fill="context-stroke"/></marker></defs>
+<rect width="1100" height="100%" fill="white"/>
+<text x="260" y="38" font-family="DejaVu Sans,Arial,sans-serif" font-size="27" fill="#245da8" font-weight="700" text-anchor="middle">Input E: small random values</text>
+<text x="805" y="38" font-family="DejaVu Sans,Arial,sans-serif" font-size="27" fill="#087c73" font-weight="700" text-anchor="middle">Output O: all zeros</text>
+<text x="146" y="125.64" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#172b45" font-weight="400" text-anchor="end">apples</text>
+<rect x="158" y="93" width="89" height="46" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="202.5" y="125.16" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">0.016</text>
+<rect x="249" y="93" width="89" height="46" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="293.5" y="125.16" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">0.050</text>
+<rect x="340" y="93" width="89" height="46" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="384.5" y="125.16" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">0.034</text>
+<text x="146" y="173.64" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#172b45" font-weight="400" text-anchor="end">oranges</text>
+<rect x="158" y="141" width="89" height="46" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="202.5" y="173.16" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">0.037</text>
+<rect x="249" y="141" width="89" height="46" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="293.5" y="173.16" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">-0.004</text>
+<rect x="340" y="141" width="89" height="46" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="384.5" y="173.16" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">-0.025</text>
+<text x="146" y="221.64" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#172b45" font-weight="400" text-anchor="end">rabbits</text>
+<rect x="158" y="189" width="89" height="46" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="202.5" y="221.16" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">0.062</text>
+<rect x="249" y="189" width="89" height="46" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="293.5" y="221.16" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">0.037</text>
+<rect x="340" y="189" width="89" height="46" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="384.5" y="221.16" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">0.015</text>
+<text x="146" y="269.64" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#172b45" font-weight="400" text-anchor="end">hamsters</text>
+<rect x="158" y="237" width="89" height="46" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="202.5" y="269.16" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">-0.058</text>
+<rect x="249" y="237" width="89" height="46" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="293.5" y="269.16" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">0.002</text>
+<rect x="340" y="237" width="89" height="46" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="384.5" y="269.16" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#245da8" font-weight="400" text-anchor="middle">-0.004</text>
+<text x="203.5" y="79" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" fill="#172b45" font-weight="400" text-anchor="middle">1</text>
+<text x="294.5" y="79" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" fill="#172b45" font-weight="400" text-anchor="middle">2</text>
+<text x="385.5" y="79" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" fill="#172b45" font-weight="400" text-anchor="middle">3</text>
+<text x="688" y="125.64" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#172b45" font-weight="400" text-anchor="end">apples</text>
+<rect x="700" y="93" width="89" height="46" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="744.5" y="125.16" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#087c73" font-weight="400" text-anchor="middle">0</text>
+<rect x="791" y="93" width="89" height="46" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="835.5" y="125.16" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#087c73" font-weight="400" text-anchor="middle">0</text>
+<rect x="882" y="93" width="89" height="46" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="926.5" y="125.16" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#087c73" font-weight="400" text-anchor="middle">0</text>
+<text x="688" y="173.64" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#172b45" font-weight="400" text-anchor="end">oranges</text>
+<rect x="700" y="141" width="89" height="46" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="744.5" y="173.16" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#087c73" font-weight="400" text-anchor="middle">0</text>
+<rect x="791" y="141" width="89" height="46" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="835.5" y="173.16" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#087c73" font-weight="400" text-anchor="middle">0</text>
+<rect x="882" y="141" width="89" height="46" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="926.5" y="173.16" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#087c73" font-weight="400" text-anchor="middle">0</text>
+<text x="688" y="221.64" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#172b45" font-weight="400" text-anchor="end">rabbits</text>
+<rect x="700" y="189" width="89" height="46" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="744.5" y="221.16" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#087c73" font-weight="400" text-anchor="middle">0</text>
+<rect x="791" y="189" width="89" height="46" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="835.5" y="221.16" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#087c73" font-weight="400" text-anchor="middle">0</text>
+<rect x="882" y="189" width="89" height="46" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="926.5" y="221.16" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#087c73" font-weight="400" text-anchor="middle">0</text>
+<text x="688" y="269.64" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#172b45" font-weight="400" text-anchor="end">hamsters</text>
+<rect x="700" y="237" width="89" height="46" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="744.5" y="269.16" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#087c73" font-weight="400" text-anchor="middle">0</text>
+<rect x="791" y="237" width="89" height="46" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="835.5" y="269.16" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#087c73" font-weight="400" text-anchor="middle">0</text>
+<rect x="882" y="237" width="89" height="46" rx="2" fill="#f1f5f9" stroke="white" stroke-width="1.5"/>
+<text x="926.5" y="269.16" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#087c73" font-weight="400" text-anchor="middle">0</text>
+<text x="745.5" y="79" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" fill="#172b45" font-weight="400" text-anchor="middle">1</text>
+<text x="836.5" y="79" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" fill="#172b45" font-weight="400" text-anchor="middle">2</text>
+<text x="927.5" y="79" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" fill="#172b45" font-weight="400" text-anchor="middle">3</text>
+<text x="303" y="318" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" fill="#245da8" font-weight="400" text-anchor="middle">Uniform: −0.5/d to +0.5/d</text>
+<text x="828" y="318" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" fill="#087c73" font-weight="400" text-anchor="middle">Every initial dot product is 0</text>
+<text x="550" y="375" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" fill="#52637a" font-weight="400" text-anchor="middle">Shown: four words, first three coordinates of d = 8</text>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="430" viewBox="0 0 1100 430" role="img">
+<title>A simultaneous SGD update with one negative</title>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L7,3 z" fill="context-stroke"/></marker></defs>
+<rect width="1100" height="100%" fill="white"/>
+<text x="262" y="36" font-family="DejaVu Sans,Arial,sans-serif" font-size="28" fill="#172b45" font-weight="700" text-anchor="middle">Before</text>
+<text x="821" y="36" font-family="DejaVu Sans,Arial,sans-serif" font-size="28" fill="#172b45" font-weight="700" text-anchor="middle">After: learning rate 0.2</text>
+<text x="25" y="98" font-family="DejaVu Sans,Arial,sans-serif" font-size="24" fill="#245da8" font-weight="400" text-anchor="start">Input apples</text>
+<rect x="267" y="61" width="230" height="60" rx="10" fill="white" stroke="#245da8" stroke-width="2"/>
+<text x="382.0" y="99.16" font-family="DejaVu Sans,Arial,sans-serif" font-size="24" fill="#245da8" font-weight="400" text-anchor="middle">(1.0, 0.0)</text>
+<line x1="518" y1="91" x2="611" y2="91" stroke="#245da8" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="633" y="61" width="230" height="60" rx="10" fill="white" stroke="#245da8" stroke-width="2"/>
+<text x="748.0" y="99.16" font-family="DejaVu Sans,Arial,sans-serif" font-size="24" fill="#245da8" font-weight="400" text-anchor="middle">(1.0, 0.2)</text>
+<text x="25" y="176" font-family="DejaVu Sans,Arial,sans-serif" font-size="24" fill="#087c73" font-weight="400" text-anchor="start">Output tasty (+)</text>
+<rect x="267" y="139" width="230" height="60" rx="10" fill="white" stroke="#087c73" stroke-width="2"/>
+<text x="382.0" y="177.16" font-family="DejaVu Sans,Arial,sans-serif" font-size="24" fill="#087c73" font-weight="400" text-anchor="middle">(0.0, 1.0)</text>
+<line x1="518" y1="169" x2="611" y2="169" stroke="#087c73" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="633" y="139" width="230" height="60" rx="10" fill="white" stroke="#087c73" stroke-width="2"/>
+<text x="748.0" y="177.16" font-family="DejaVu Sans,Arial,sans-serif" font-size="24" fill="#087c73" font-weight="400" text-anchor="middle">(0.1, 1.0)</text>
+<text x="25" y="254" font-family="DejaVu Sans,Arial,sans-serif" font-size="24" fill="#b45309" font-weight="400" text-anchor="start">Output furry (−)</text>
+<rect x="267" y="217" width="230" height="60" rx="10" fill="white" stroke="#b45309" stroke-width="2"/>
+<text x="382.0" y="255.16" font-family="DejaVu Sans,Arial,sans-serif" font-size="24" fill="#b45309" font-weight="400" text-anchor="middle">(0.0, -1.0)</text>
+<line x1="518" y1="247" x2="611" y2="247" stroke="#b45309" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="633" y="217" width="230" height="60" rx="10" fill="white" stroke="#b45309" stroke-width="2"/>
+<text x="748.0" y="255.16" font-family="DejaVu Sans,Arial,sans-serif" font-size="24" fill="#b45309" font-weight="400" text-anchor="middle">(-0.1, -1.0)</text>
+<text x="972" y="98" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" fill="#245da8" font-weight="400" text-anchor="middle">∇ₑL: (0, −1)</text>
+<text x="972" y="176" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" fill="#087c73" font-weight="400" text-anchor="middle">error: −0.5</text>
+<text x="972" y="254" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" fill="#b45309" font-weight="400" text-anchor="middle">error: +0.5</text>
+<line x1="30" y1="305" x2="1065" y2="305" stroke="#cbd5e1" stroke-width="2"/>
+<text x="30" y="348" font-family="DejaVu Sans,Arial,sans-serif" font-size="25" fill="#172b45" font-weight="700" text-anchor="start">Pair scores</text>
+<text x="337" y="348" font-family="DejaVu Sans,Arial,sans-serif" font-size="25" fill="#172b45" font-weight="400" text-anchor="middle">(0.0, 0.0)</text>
+<line x1="510" y1="338" x2="610" y2="338" stroke="#172b45" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="748" y="348" font-family="DejaVu Sans,Arial,sans-serif" font-size="25" fill="#172b45" font-weight="400" text-anchor="middle">(+0.3, -0.3)</text>
+<text x="30" y="398" font-family="DejaVu Sans,Arial,sans-serif" font-size="25" fill="#172b45" font-weight="700" text-anchor="start">Total loss</text>
+<text x="337" y="398" font-family="DejaVu Sans,Arial,sans-serif" font-size="25" fill="#172b45" font-weight="400" text-anchor="middle">1.386</text>
+<line x1="510" y1="388" x2="610" y2="388" stroke="#172b45" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="748" y="398" font-family="DejaVu Sans,Arial,sans-serif" font-size="25" fill="#087c73" font-weight="700" text-anchor="middle">1.109</text>
+</svg>
