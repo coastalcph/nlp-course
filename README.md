@@ -55,7 +55,7 @@ Materials from this interactive book are used throughout the Natural Language Pr
    </tr>
    <tr>
       <td>43</td>
-      <td> <a href="https://aclanthology.org/2026.findings-acl.1190.pdf">Xu et al., 2022</a><br> <a href='https://arxiv.org/pdf/2310.11986'>Weidiner et al., 2023</a></td>
+      <td> <a href="https://aclanthology.org/2026.findings-acl.1190.pdf">Xu et al., 2026 </a><br> <a href='https://arxiv.org/pdf/2310.11986'>Weidiner et al., 2023</a></td>
       <td>20. Oct. 2026:<br> Human Label Variation and Pluralistic Aignment (tba)<br> Sociotechnical Challenges of LLM Alignment (<a href='chapters/sociotechnical_challenges_llms_slides.pdf'>slides</a>)<br> </td>
       <td>23. &amp; 26. Oct. 2026: Project help.</td>
       <td></td>
