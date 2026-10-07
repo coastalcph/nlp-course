@@ -58,7 +58,7 @@ Materials from this interactive book are used throughout the Natural Language Pr
       <td> <a href="https://aclanthology.org/2026.findings-acl.1190.pdf">Xu et al., 2026 </a><br> <a href='https://arxiv.org/pdf/2310.11986'>Weidinger et al., 2023</a></td>
       <td>20. Oct. 2026:<br> Human Label Variation and Pluralistic Aignment (tba)<br> Sociotechnical Audit of AI Safety (tba)<br> </td>
       <td>23. &amp; 26. Oct. 2026: Project help.</td>
-      <td></td>
+      <td><a href='labs/notebooks_2026/lab_7.ipynb'>lab 7</a></td>
    </tr>
    <tr>
       <td>44</td>
