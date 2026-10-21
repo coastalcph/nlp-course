@@ -68,5 +68,6 @@ Materials from this interactive book are used throughout the Natural Language Pr
       <td></td>
    </tr>
 </table>
+
 The easiest way to view the course content is via the static [nbviewer](https://nbviewer.jupyter.org/github/coastalcph/nlp-course/blob/master/overview.ipynb). 
 To be able to make changes to the book and render it dynamically, see the [installation instructions](INSTALL.md).
