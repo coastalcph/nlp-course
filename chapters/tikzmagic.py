@@ -41,7 +41,6 @@ from IPython.testing.skipdoctest import skip_doctest
 from IPython.core.magic_arguments import (
     argument, magic_arguments, parse_argstring
 )
-from IPython.utils.py3compat import unicode_to_str
  
 _mimetypes = {'png' : 'image/png',
               'svg' : 'image/svg+xml',
