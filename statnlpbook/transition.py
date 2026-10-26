@@ -1,4 +1,6 @@
 from graphviz import Digraph
+from IPython.display import HTML
+from spacy import displacy
 
 
 def render_tree(tokens, edges):
@@ -67,12 +69,6 @@ def render_transitions_displacy(transitions, tokens):
     return Output()
 
 
-import uuid
-import json
-
-i = [0]
-
-
 def to_displacy_graph(deps, tokens, filter_dangling_nodes=False, max_length=None):
     words = [{'text': t} for t in tokens]
     arcs = [{'start': head, 'end': mod, 'label': label, 'dir': 'right'} if head < mod else
@@ -108,48 +104,18 @@ def to_displacy_graph(deps, tokens, filter_dangling_nodes=False, max_length=None
         return arcs, words
 
 
-from IPython.core.display import HTML
-
-
 def render_displacy(arcs, words, width="5000px"):
-    #     div_id = str(uuid.uuid4())
-    div_id = "displacy" + str(i[0])
-    i[0] += 1
-    js = """
-    <div id='""" + div_id + """' style="width: """ + width + """;"></div>
-    <script>
-    $(function() {
-    requirejs.config({
-        paths: {
-            'displaCy': ['/files/node_modules/displacy/displacy'],
-                                                  // strip .js ^, require adds it back
-        },
-    });
-    require(['displaCy'], function() {
-        console.log("Loaded :)");
-        const displacy = new displaCy('http://localhost:8000', {
-            container: '#""" + div_id + """',
-            format: 'spacy',
-            distance: 150,
-            offsetX: 0,
-            wordSpacing: 20,
-            arrowSpacing: 3,
-
-        });
-        const parse = {
-            arcs: """ + json.dumps(arcs) + """,
-            words: """ + json.dumps(words) + """
-        };
-
-        displacy.render(parse, {
-            uniqueId: 'render_""" + div_id + """'
-            //color: '#ff0000'
-        });
-        return {};
-    });
-    });
-    </script>"""
-    return HTML(js)
+    """Render dependency arcs as self-contained SVG for notebooks and HTML exports."""
+    svg = displacy.render(
+        {"arcs": arcs, "words": [{"tag": "", **word} for word in words]},
+        style="dep",
+        manual=True,
+        jupyter=False,
+        options={"distance": 150, "word_spacing": 20, "arrow_spacing": 3},
+    )
+    return HTML(
+        '<div style="width: {}; max-width: 100%; overflow-x: auto;">{}</div>'.format(width, svg)
+    )
 
 
 class DependencyTree:
